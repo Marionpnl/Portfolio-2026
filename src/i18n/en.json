@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tag": "Fullstack web developer",
+    "title": "I create meaningful digital experiences",
+    "cta_projects": "See my projects",
+    "cta_contact": "Contact me"
+  },
+  "about": {
+    "label": "About",
+    "title": "Empathy at the service of logic",
+    "text1": "As a former nurse turned web developer, I chose this path because everything that motivated me in my previous career is here too: rigor, attention to detail, and problem-solving. I enjoy the logic of code just as much as crafting a polished interface. Trained on the MERN stack, I have worked across every layer — integration, React frontend, secure REST API, SEO, performance and accessibility — and I used the creation of this portfolio as an opportunity to learn TypeScript, adding an extra layer of reliability to my code. What all these experiences have in common: each time, I learned fast, on my own, and until I truly mastered it. I am methodical and rigorous, I structure before I act, and I deliver work I am proud of. Based in Yverdon-les-Bains, I am looking for my first web development position, in a team where continuous learning is valued.",
+    "text2": "Find me on",
+    "location": "Yverdon-les-Bains"
+  },
+  "skills": {
+    "label": "Skills",
+    "title1": "Technical Skills & Soft Skills",
+    "title2": "Development",
+    "title3": "Responsive Design",
+    "title4": "Adaptability",
+    "title5": "Performance",
+    "title6": "Collaboration",
+    "title7": "Attention to Detail",
+    "text1": "Clean and efficient code using modern frameworks and best practices",
+    "text2": "User-centered design, balancing aesthetics and functionality across all screen sizes",
+    "text3": "Continuous learning of new technologies and agility in the face of change",
+    "text4": "Optimized solutions for speed, accessibility and SEO",
+    "text5": "Clear communication and smooth teamwork throughout projects",
+    "text6": "Pixel-perfect approach with constant attention to code quality and data security",
+    "text7": "My resume here"
+  },
+  "projects": {
+    "label": "My projects",
+    "title": "Selected projects",
+    "see_all": "All",
+    "text1": "A peer-to-peer real estate rental web application",
+    "text2": "A book rating and reference website",
+    "text3": "My web developer portfolio, featuring a custom design system, typed architecture and multilingual support",
+    "text4": "SEO optimization, accessibility and performance improvements for a photographer's showcase website"
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let's work together.",
+    "description": "An opportunity, a project, or just want to chat? I reply to every message.",
+    "label_email": "E-mail",
+    "label_location": "Location",
+    "label_availability": "Availability",
+    "location": "Yverdon-les-Bains, Switzerland",
+    "availability": "Open to opportunities",
+    "name": "Name",
+    "text_name": "Your name",
+    "email": "E-mail",
+    "text_email": "Your e-mail",
+    "message": "Message",
+    "text_message": "Tell me about your project",
+    "send": "Send"
+  },
+  "footer": {
+    "text": "© 2026 Marion Penel. All rights reserved",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tag": "Développeuse web fullstack",
+    "title": "Je crée des expérience digitales avec sens",
+    "cta_projects": "Voir mes projets",
+    "cta_contact": "Me contacter"
+  },
+  "about": {
+    "label": "À propos",
+    "title": "L'empathie au service de la logique",
+    "text1": "Ancienne infirmière reconvertie, j'ai choisi le développement web parce que ce qui me motivait déjà dans mon métier s'y retrouve entièrement : la rigueur, le souci du détail et la résolution de problèmes. J'aime autant la logique du code que le soin apporté à l’interface. Formée sur la stack MERN, j'ai touché à tous les aspects du métier - intégration, frontend React, API REST sécurisée, SEO/performance et accessibilité - et j'ai profité de la création de ce portfolio pour intégrer TypeScript, afin d'apporter une couche de fiabilité supplémentaire à mon code. Ce que ces expériences ont en commun : à chaque fois, j'ai appris vite, seule, et jusqu'à maîtriser. Je suis rigoureuse et méthodique, je structure avant d'agir, et je livre un travail propre et dont je suis fière. Basée à Yverdon-les-bains, je recherche un premier poste en développement web, dans une équipe où l'apprentissage continu est valorisé.",
+    "text2": "Retrouvez-moi sur",
+    "location": "Yverdon-les-Bains"
+  },
+  "skills": {
+    "label": "Compétences",
+    "title1": "Compétences techniques & Soft Skills",
+    "title2": "Développement",
+    "title3": "Responsive Design",
+    "title4": "Adaptabilité",
+    "title5": "Performance",
+    "title6": "Collaboration",
+    "title7": "Rigueur & Détails",
+    "text1": "Code propre et efficace avec des frameworks modernes et les meilleures pratiques",
+    "text2": "Design centré utilisateur, alliant esthétique et fonctionnalité sur tous types d'écrans",
+    "text3": "Apprentissage continu des nouvelles technos et agilité face aux changements",
+    "text4": "Solutions optimisées pour la vitesse, l'accessibilité et le SEO",
+    "text5": "Communication claire et travail d'équipe fluide",
+    "text6": "Approche pixel-perfect et vigilance constante sur la qualité du code et la sécurité des données",
+    "text7": "Mon CV ici"
+  },
+  "projects": {
+    "label": "Mes projets",
+    "title": "Projets sélectionnés",
+    "see_all": "Tous",
+    "text1": "Application web de location immobilière entre particuliers",
+    "text2": "Site de référencement et de notation de livres",
+    "text3": "Mon portfolio de développeuse web, incluant un design système sur-mesure, une architecture typée et une gestion multilingue",
+    "text4": "Optimisation SEO, accessibilité et performance d'un site vitrine de photographe"
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Travaillons ensemble.",
+    "description": "Une opportunité, un projet ou simplement envie d'échanger ? Je réponds à tous les messages.",
+    "label_location": "Localisation",
+    "location": "Yverdon-les-Bains, Suisse",
+    "label_availability": "Disponibilité",
+    "availability": "Ouverte aux opportunités",
+    "name": "Nom",
+    "text_name": "Votre nom",
+    "email": "E-mail",
+    "text_email": "Votre e-mail",
+    "message": "Message",
+    "text_message": "Parlez-moi de votre projet",
+    "send": "Envoyer"
+  },
+  "footer": {
+    "text": "© 2026 Marion Penel. Tous droits réservés"
+  }
+}
