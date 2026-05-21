@@ -1,0 +1,38 @@
+import type { Project } from '../types/index'
+
+export const projects: Project[] = [
+  {
+    id: 1,
+    slug: 'kasa',
+    category: 'front end',
+    stack: ['React', 'React Router', 'Sass'],
+    githubUrl: 'https://github.com/tonpseudo/kasa',
+    image: '/images/kasa.png',
+  },
+  {
+    id: 2,
+    slug: 'monVieuxGrimoire',
+    category: 'back end',
+    stack: ['Node.js', 'MongoDB', 'Express'],
+    githubUrl: 'https://github.com/tonpseudo/mon-vieux-grimoire',
+    image: '/images/mon-vieux-grimoire.png',
+  },
+  {
+    id: 3,
+    slug: 'portfolio',
+    category: 'fullstack',
+    stack: ['React', 'TypeScript', 'Tailwind v4', 'i18n'],
+    githubUrl: 'https://github.com/tonpseudo/portfolio',
+    liveUrl: 'https://tonportfolio.vercel.app',
+    image: '/images/portfolio.png',
+  },  
+  {
+    id: 4,
+    slug: 'ninaCarducci',
+    category: 'front end',
+    stack: ['SEO', 'Performance', 'HTML/CSS'],
+    githubUrl: 'https://github.com/tonpseudo/nina-carducci',
+    liveUrl: 'https://nina-carducci.vercel.app',
+    image: '/images/nina-carducci.png',
+  },
+]

@@ -38,16 +38,86 @@
   "projects": {
     "label": "Mes projets",
     "title": "Projets sélectionnés",
-    "see_all": "Tous",
-    "text1": "Application web de location immobilière entre particuliers",
-    "text2": "Site de référencement et de notation de livres",
-    "text3": "Mon portfolio de développeuse web, incluant un design système sur-mesure, une architecture typée et une gestion multilingue",
-    "text4": "Optimisation SEO, accessibilité et performance d'un site vitrine de photographe"
+    "filter_all": "Tous",
+    "filter_frontend": "Front-end",
+    "filter_backend": "Back-end",
+    "filter_fullstack": "Fullstack",
+    "modal_about": "À propos du projet",
+    "modal_challenges": "Défis",
+    "modal_solutions": "Solutions",
+    "see_live_site": "Voir le site",
+    "see_github": "Code source",
+    "close": "Fermer",
+    "kasa": {
+      "category": "Front end",
+      "title": "Kasa",
+      "card_description": "Application web de location immobilière entre particuliers",
+      "about": "Kasa est une application moderne de location de logements entre particuliers. J'ai développé l'ensemble de l'interface utilisateur avec React, en créant une application fluide, totalement responsive et respectant scrupuleusement les maquettes graphiques fournies.",
+      "challenges": [
+        "Gérer la navigation de manière fluide sans rechargement de page (Single Page Application).",
+        "Créer des composants interactifs complexes comme des galeries d'images ou des menus déroulants sans bibliothèques externes.",
+        "Gérer les erreurs d'URLs ou de logements inexistants."
+      ],
+      "solutions": [
+        "Configuration complète de React Router pour orchestrer la navigation entre les différentes pages du site.",
+        "Développement de composants customisés (Collapse, Carrousel) en exploitant pleinement les Hooks React",
+        "Mise en place d'une page d'erreur 404 dédiée et redirection automatique pour les URLs invalides"
+      ]
+    },
+    "monVieuxGrimoire": {
+      "category": "Back end",
+      "title": "Mon Vieux Grimoire",
+      "card_description": "Site de référencement et de notation de livres",
+      "about": "Mon Vieux Grimoire est un site de notation de livres pour une petite librairie locale. J'ai développé l'intégralité du back-end de l'application, en mettant en place une base de données robuste et une API REST sécurisée permettant aux utilisateurs de s'authentifier, d'ajouter des livres et de poster des notes.",
+      "challenges": [
+        "Sécuriser les données des utilisateurs et les processus d'authentification.",
+        "Gérer l'importation d'images volumineuses sans impacter le stockage du serveur.",
+        "Mettre en place un système d'évaluation strict (une seule note par utilisateur et par livre)."
+      ],
+      "solutions": [
+        "Mise en œuvre de tokens JWT et hachage des mots de passe avec bcrypt.",
+        "Intégration de Sharp et Multer pour optimiser, redimensionner et convertir les images automatiquement",
+        "Développement d'une logique de validation côté serveur via Mongoose pour bloquer les doublons de votes."
+      ]
+    },
+    "portfolio": {
+      "category": "Fullstack",
+      "title": "Portfolio Professionnel",
+      "card_description": "Mon portfolio de développeuse web incluant un design système sur-mesure, une architecture typée et une gestion multilingue",
+      "about": "Création de ma vitrine professionnelle pour présenter mes projets et mes compétences de développeuse. Ce projet a été pensé pour être performant, accessible, entièrement typé avec TypeScript, et scalable pour accueillir mes futurs projets.",
+      "challenges": [
+        "Créer un design système réutilisable pour assurer la cohérence visuelle et faciliter l'ajout de nouveaux projets.",
+        "Structurer proprement l'application en composants réutilisables et typés pour éviter les régressions.",
+        "Mettre en place un système de traduction (FR/EN) fluide pour étendre la portée du portfolio."
+      ],
+      "solutions": [
+        "Développement d'un design système complet avec des composants modulaires (boutons, cartes, modales) et une palette de couleurs définie pour assurer une identité visuelle forte.",
+        "Utilisation de TypeScript pour typer tous les composants et les données, garantissant ainsi une maintenance facile et une évolutivité sans risque de bugs.",
+        "Intégration de react-i18next pour gérer les traductions de manière efficace"
+      ]
+    },
+   "ninaCarducci": {
+      "category": "Front end",
+      "title": "Nina Carducci",
+      "card_description": "Optimisation SEO, accessibilité et performance d'un site vitrine de photographe professionnelle",
+      "about": "Nina Carducci est le site vitrine d'une photographe professionnelle. L'objectif principal de ce projet était de réaliser un audit complet d'un site existant afin d'optimiser ses performances globales, d'améliorer son référencement naturel (SEO) et de garantir son accessibilité technique pour tous les utilisateurs.",
+      "challenges": [
+        "Corriger la vitesse de chargement critique du site causée par des images massives et non optimisées.",
+        "Structurer le code pour permettre aux moteurs de recherche de mieux comprendre et indexer le site.",
+        "Rendre le site pleinement accessible (WCAG) et corriger les bugs de navigation."
+      ],
+      "solutions": [
+        "Optimisation et conversion de toutes les images au format moderne WebP, réduisant drastiquement le poids des pages.",
+        "Réécriture sémantique des balises HTML, intégration des balises Schema.org (données structurées) et optimisation des balises Meta Open Graph.",
+        "Correction des contrastes de couleurs, ajout des attributs alt et aria-label manquants et implémentation d'une navigation au clavier fluide."
+      ]
+    }
   },
   "contact": {
     "label": "Contact",
     "title": "Travaillons ensemble.",
     "description": "Une opportunité, un projet ou simplement envie d'échanger ? Je réponds à tous les messages.",
+    "label_email": "E-mail",
     "label_location": "Localisation",
     "location": "Yverdon-les-Bains, Suisse",
     "label_availability": "Disponibilité",
