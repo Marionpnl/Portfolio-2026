@@ -1,10 +1,22 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
-:root {
-  --cream: #F5F2EC;
-  --green: #4A7C6F;
-  --rose: #D4A898;
-  --terra: #B15F5F;
-  --sage: #8FA89F;
-  --black: #1C1C1A;
+@theme {
+  /* Polices */
+  --font-space: 'Space Grotesk', sans-serif;
+  --font-dm: 'DM Sans', sans-serif;
+
+  /* Couleurs — accessibles via Tailwind ET via var() */
+  --color-cream: #F5F2EC;
+  --color-green: #4A7C6F;
+  --color-rose: #D4A898;
+  --color-terra: #B15F5F;
+  --color-sage: #8FA89F;
+  --color-black: #1C1C1A;
+}
+
+body {
+  font-family: var(--font-dm);
+  background-color: var(--color-cream);
+  color: var(--color-black);
 }
