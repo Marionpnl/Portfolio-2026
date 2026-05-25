@@ -6,9 +6,10 @@
     "contact": "Contact"
   },
   "hero": {
-    "tag": "Développeuse web fullstack",
-    "title": "Je crée des expérience digitales avec sens",
+    "tag": "Développeuse Web Fullstack",
+    "title": "Je crée des<br/> expériences<br/> digitales <sage>avec sens</sage>",
     "cta_projects": "Voir mes projets",
+    "cta_projects_mobile": "Mes projets",
     "cta_contact": "Me contacter"
   },
   "about": {
@@ -96,7 +97,7 @@
         "Intégration de react-i18next pour gérer les traductions de manière efficace"
       ]
     },
-   "ninaCarducci": {
+    "ninaCarducci": {
       "category": "Front end",
       "title": "Nina Carducci",
       "card_description": "Optimisation SEO, accessibilité et performance d'un site vitrine de photographe professionnelle",

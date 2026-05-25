@@ -1,14 +1,15 @@
-import Navbar from './components/layout/Navbar'
+import Navbar from './components/layout/Navbar';
+import Hero from './components/sections/Hero';
 
 function App() {
-
   return (
     <>
       <Navbar />
-       <main className="pt-16">
+      <main className="pt-16">
+        <Hero />
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

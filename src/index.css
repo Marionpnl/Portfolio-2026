@@ -1,5 +1,4 @@
-@import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
 
 @theme {
   /* Polices */
@@ -7,16 +6,74 @@
   --font-dm: 'DM Sans', sans-serif;
 
   /* Couleurs — accessibles via Tailwind ET via var() */
-  --color-cream: #F5F2EC;
-  --color-green: #4A7C6F;
-  --color-rose: #D4A898;
-  --color-terra: #B15F5F;
-  --color-sage: #8FA89F;
-  --color-black: #1C1C1A;
+  --color-cream: #f5f2ec;
+  --color-green: #4a7c6f;
+  --color-rose: #d4a898;
+  --color-terra: #b15f5f;
+  --color-sage: #8fa89f;
+  --color-black: #1c1c1a;
 }
 
 body {
   font-family: var(--font-dm);
   background-color: var(--color-cream);
   color: var(--color-black);
+}
+
+/* Animations personnalisées */
+
+@keyframes revealText {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes popCTA {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-reveal {
+  animation: revealText 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+.animate-pop {
+  animation: popCTA 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animation du soulignement rose */
+@keyframes drawLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 3px;
+  background-color: var(--color-rose);
+  border-radius: 2px;
+  /* L'animation attend 1s (le temps que le texte apparaisse) puis se dessine en 0.6s */
+  animation: drawLine 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 1000ms forwards;
 }
