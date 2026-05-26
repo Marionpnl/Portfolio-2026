@@ -10,13 +10,16 @@
     "title": "Je crée des<br/> expériences<br/> digitales <sage>avec sens</sage>",
     "cta_projects": "Voir mes projets",
     "cta_projects_mobile": "Mes projets",
-    "cta_contact": "Me contacter"
+    "cta_contact": "Me contacter",
+    "text1": "Retrouvez-moi sur"
   },
   "about": {
     "label": "À propos",
     "title": "L'empathie au service de la logique",
-    "text1": "Ancienne infirmière reconvertie, j'ai choisi le développement web parce que ce qui me motivait déjà dans mon métier s'y retrouve entièrement : la rigueur, le souci du détail et la résolution de problèmes. J'aime autant la logique du code que le soin apporté à l’interface. Formée sur la stack MERN, j'ai touché à tous les aspects du métier - intégration, frontend React, API REST sécurisée, SEO/performance et accessibilité - et j'ai profité de la création de ce portfolio pour intégrer TypeScript, afin d'apporter une couche de fiabilité supplémentaire à mon code. Ce que ces expériences ont en commun : à chaque fois, j'ai appris vite, seule, et jusqu'à maîtriser. Je suis rigoureuse et méthodique, je structure avant d'agir, et je livre un travail propre et dont je suis fière. Basée à Yverdon-les-bains, je recherche un premier poste en développement web, dans une équipe où l'apprentissage continu est valorisé.",
-    "text2": "Retrouvez-moi sur",
+    "text1_description": "Ancienne infirmière reconvertie, j'ai choisi le développement web parce que ce qui me motivait déjà dans mon métier s'y retrouve entièrement : la rigueur, le souci du détail et la résolution de problèmes. J'aime autant la logique du code que le soin apporté à l’interface.",
+    "text2_description": "Formée sur la stack MERN, j'ai touché à tous les aspects du métier - intégration, frontend React, API REST sécurisée, SEO/performance et accessibilité - et j'ai profité de la création de ce portfolio pour intégrer TypeScript, afin d'apporter une couche de fiabilité supplémentaire à mon code.",
+    "text3_description": "Ce que ces expériences ont en commun : à chaque fois, j'ai appris vite, seule, et jusqu'à maîtriser. Je suis rigoureuse et méthodique, je structure avant d'agir, et je livre un travail propre et dont je suis fière.",
+    "text4_description": "Basée à Yverdon-les-bains, je recherche un premier poste en développement web, dans une équipe où l'apprentissage continu est valorisé.",
     "location": "Yverdon-les-Bains"
   },
   "skills": {
