@@ -8,6 +8,7 @@ export const projects: Project[] = [
     category: 'front end',
     stack: ['React', 'React Router', 'Sass'],
     githubUrl: 'https://github.com/tonpseudo/kasa',
+    liveUrl: 'https://kasa.vercel.app',
     image: '/images/kasa.png',
   },
   {
@@ -24,7 +25,7 @@ export const projects: Project[] = [
     slug: 'portfolio',
     year: 2026,
     category: 'fullstack',
-    stack: ['React', 'TypeScript', 'Tailwind v4', 'i18n'],
+    stack: ['React', 'TypeScript', 'Tailwind v4'],
     githubUrl: 'https://github.com/tonpseudo/portfolio',
     liveUrl: 'https://tonportfolio.vercel.app',
     image: '/images/portfolio.png',

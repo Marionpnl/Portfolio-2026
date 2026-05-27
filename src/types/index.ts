@@ -9,6 +9,7 @@ export type ProjectCategory = 'front end' | 'back end' | 'fullstack';
 export interface Project {
   id: number;
   slug: string; // identifiant unique ex: "kasa", "nina-carducci"
+  year: number; // ex: 2026
   category: ProjectCategory;
   stack: string[]; // ex: ["React", "React Router", "Sass"]
   githubUrl: string;
@@ -50,9 +51,14 @@ export interface ContactForm {
 // ============================================
 export interface ProjectCardProps {
   project: Project;
-  onClick: () => void; // ouvre la modale au clic
+  isFeatured: boolean; // Ajouté pour gérer la grande carte asymétrique
+  onClick: () => void;
+  techIcons: Record<string, string>;
+  categoryColors: Record<string, string>;
 }
+
 export interface ProjectModalProps {
-  project: Project | null; // null = modale fermée
-  onClose: () => void; // ferme la modale
+  project: Project; // On passe le projet actif directement (la visibilité est gérée par le parent)
+  onClose: () => void;
+  techIcons: Record<string, string>;
 }
