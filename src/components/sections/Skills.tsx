@@ -9,7 +9,7 @@ const Skills = () => {
       <div className="max-w-6xl mx-auto">
         {/* EN-TÊTE DE SECTION */}
         <div className="mb-12">
-          <p className="text-black font-dm font-bold uppercase tracking-widest text-large md:text-2xl mb-15">
+          <p className="text-black font-dm font-bold uppercase tracking-widest text-large md:text-2xl mb-10">
             {t('skills.label')}
           </p>
           <h2 className="font-space text-2xl md:text-[40px] font-bold text-black tracking-tight">
@@ -52,7 +52,7 @@ const Skills = () => {
 
           {/* COLONNE DROITE : HARD SKILLS + CV (5 COLONNES) */}
           <div className="flex flex-col gap-8 lg:col-span-5">
-            <div className="flex flex-wrap gap-3 md:max-w-[330px]">
+            <div className="flex flex-wrap gap-3 md:max-w-82.5">
               {hardSkills.map((tech) => (
                 <div
                   key={tech.name}

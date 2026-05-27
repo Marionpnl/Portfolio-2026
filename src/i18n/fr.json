@@ -73,14 +73,14 @@
       "card_description": "Application web de location immobilière entre particuliers",
       "about": "Kasa est une application moderne de location de logements entre particuliers. J'ai développé l'ensemble de l'interface utilisateur avec React, en créant une application fluide, totalement responsive et respectant scrupuleusement les maquettes graphiques fournies.",
       "challenges": [
-        "Gérer la navigation de manière fluide sans rechargement de page (Single Page Application).",
+        "Gérer la navigation de manière fluide sans rechargement de page (SPA).",
         "Créer des composants interactifs complexes comme des galeries d'images ou des menus déroulants sans bibliothèques externes.",
         "Gérer les erreurs d'URLs ou de logements inexistants."
       ],
       "solutions": [
-        "Configuration complète de React Router pour orchestrer la navigation entre les différentes pages du site.",
-        "Développement de composants customisés (Collapse, Carrousel) en exploitant pleinement les Hooks React",
-        "Mise en place d'une page d'erreur 404 dédiée et redirection automatique pour les URLs invalides"
+        "Configuration complète de React Router pour orchestrer la navigation entre les pages du site.",
+        "Développement de composants customisés (Collapse, Carrousel) en exploitant les Hooks React",
+        "Mise en place d'une page d'erreur 404 et redirection automatique pour les URLs invalides"
       ]
     },
     "monVieuxGrimoire": {
@@ -102,15 +102,15 @@
     "portfolio": {
       "category": "Fullstack",
       "title": "Portfolio Professionnel",
-      "card_description": "Mon portfolio de développeuse web incluant un design système sur-mesure, une architecture typée et une gestion multilingue",
+      "card_description": "Mon portfolio de développeuse web incluant: design sur-mesure, architecture typée et gestion multilingue",
       "about": "Création de ma vitrine professionnelle pour présenter mes projets et mes compétences de développeuse. Ce projet a été pensé pour être performant, accessible, entièrement typé avec TypeScript, et scalable pour accueillir mes futurs projets.",
       "challenges": [
-        "Créer un design système réutilisable pour assurer la cohérence visuelle et faciliter l'ajout de nouveaux projets.",
-        "Structurer proprement l'application en composants réutilisables et typés pour éviter les régressions.",
+        "Mise en place d'un environnement moderne et rapide avec la dernière version de Tailwind CSS v4.",
+        "Structurer proprement l'application en composants réutilisables et typés.",
         "Mettre en place un système de traduction (FR/EN) fluide pour étendre la portée du portfolio."
       ],
       "solutions": [
-        "Développement d'un design système complet avec des composants modulaires (boutons, cartes, modales) et une palette de couleurs définie pour assurer une identité visuelle forte.",
+        "Initialisation du projet avec Vite et configuration du compilateur Tailwind v4 à l'aide des variables CSS natives",
         "Utilisation de TypeScript pour typer tous les composants et les données, garantissant ainsi une maintenance facile et une évolutivité sans risque de bugs.",
         "Intégration de react-i18next pour gérer les traductions de manière efficace"
       ]
@@ -127,8 +127,8 @@
       ],
       "solutions": [
         "Optimisation et conversion de toutes les images au format moderne WebP, réduisant drastiquement le poids des pages.",
-        "Réécriture sémantique des balises HTML, intégration des balises Schema.org (données structurées) et optimisation des balises Meta Open Graph.",
-        "Correction des contrastes de couleurs, ajout des attributs alt et aria-label manquants et implémentation d'une navigation au clavier fluide."
+        "Réécriture sémantique des balises HTML, intégration des balises Schema.org (données structurées) et Meta Open Graph.",
+        "Correction des contrastes, ajout des attributs alt et aria-label manquants et implémentation d'une navigation au clavier fluide."
       ]
     }
   },

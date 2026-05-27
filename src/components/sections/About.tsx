@@ -16,7 +16,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           {/* COLONNE GAUCHE — Photo */}
           <div className="flex justify-center ">
-            <div className="w-[280px] h-[340px]">
+            <div>
               <img
                 src={aboutPhoto}
                 alt="Photo de Marion Penel — développeuse web fullstack"

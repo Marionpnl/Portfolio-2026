@@ -69,7 +69,7 @@
     "kasa": {
       "title": "Kasa",
       "category": "front end",
-      "card_description": "A peer-to-peer real estate rental web application built with a reusable component architecture.",
+      "card_description": "A peer-to-peer real estate rental web application.",
       "about": "Kasa is a modern peer-to-peer rental application. I developed the entire user interface using React, building a smooth, fully responsive application that strictly adheres to the provided design mockups.",
       "challenges": [
         "Managing smooth navigation without page reloads (Single Page Application).",
@@ -77,8 +77,8 @@
         "Handling errors for invalid URLs or non-existent listings."
       ],
       "solutions": [
-        "Full configuration of React Router to orchestrate navigation between the different pages of the site.",
-        "Development of custom components (Collapse, Carousel) making full use of React Hooks (useState).",
+        "Configuration of React Router to orchestrate navigation between the pages of the site.",
+        "Development of custom components (Collapse, Carousel) making full use of React Hooks.",
         "Implementation of a dedicated 404 error page and automatic redirection for invalid identifiers."
       ]
     },
@@ -110,7 +110,7 @@
       ],
       "solutions": [
         "Compression, resizing and conversion of all images to the modern WebP format, drastically reducing page weight.",
-        "Semantic rewriting of HTML tags, integration of Schema.org tags (structured data) and optimization of Open Graph Meta tags.",
+        "Semantic rewriting of HTML tags, integration of Schema.org tags (structured data) and Open Graph Meta tags.",
         "Correction of color contrasts, addition of missing aria-label attributes and implementation of smooth keyboard navigation."
       ]
     },
@@ -121,7 +121,7 @@
       "about": "Creation of my professional showcase to present my projects and developer skills. This project was designed to be performant, accessible, fully typed with TypeScript, and scalable to accommodate future projects.",
       "challenges": [
         "Setting up a modern and fast environment with the latest version of Tailwind CSS v4.",
-        "Cleanly structuring the application into reusable and typed components to avoid regressions.",
+        "Cleanly structuring the application into reusable and typed components.",
         "Implementing a smooth FR/EN translation system to extend the portfolio's reach."
       ],
       "solutions": [
