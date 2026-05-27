@@ -8,7 +8,7 @@ const About = () => {
     <section id="about" className="py-15 px-6 md:px-10 bg-cream">
       <div className="max-w-6xl mx-auto">
         {/* Label en haut à gauche */}
-        <p className="text-[#1C1C1A] text-ml md:text-2xl uppercase tracking-widest font-bold mb-15">
+        <p className="text-black text-ml md:text-2xl uppercase tracking-widest font-bold mb-15">
           {t('about.label')}
         </p>
 

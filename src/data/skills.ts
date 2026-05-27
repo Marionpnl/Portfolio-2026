@@ -1,6 +1,14 @@
-import type { Skill } from '../types'
+import {
+  Code2,
+  Monitor,
+  RefreshCw,
+  Zap,
+  Users,
+  ShieldCheck,
+} from 'lucide-react';
+import type { Skill, SoftSkill } from '../types';
 
-export const skills: Skill[] = [
+export const hardSkills: Skill[] = [
   { name: 'HTML', icon: 'devicon-html5-plain' },
   { name: 'CSS', icon: 'devicon-css3-plain' },
   { name: 'JavaScript', icon: 'devicon-javascript-plain' },
@@ -14,4 +22,13 @@ export const skills: Skill[] = [
   { name: 'Figma', icon: 'devicon-figma-plain' },
   { name: 'Git', icon: 'devicon-git-plain' },
   { name: 'GitHub', icon: 'devicon-github-original' },
-]
+];
+
+export const softSkills: SoftSkill[] = [
+  { key: 'dev', icon: Code2 },
+  { key: 'responsive', icon: Monitor },
+  { key: 'adapt', icon: RefreshCw },
+  { key: 'perf', icon: Zap },
+  { key: 'collab', icon: Users },
+  { key: 'rigueur', icon: ShieldCheck },
+];

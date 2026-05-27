@@ -24,21 +24,36 @@
   },
   "skills": {
     "label": "Compétences",
-    "title1": "Compétences techniques & Soft Skills",
-    "title2": "Développement",
-    "title3": "Responsive Design",
-    "title4": "Adaptabilité",
-    "title5": "Performance",
-    "title6": "Collaboration",
-    "title7": "Rigueur & Détails",
-    "text1": "Code propre et efficace avec des frameworks modernes et les meilleures pratiques",
-    "text2": "Design centré utilisateur, alliant esthétique et fonctionnalité sur tous types d'écrans",
-    "text3": "Apprentissage continu des nouvelles technos et agilité face aux changements",
-    "text4": "Solutions optimisées pour la vitesse, l'accessibilité et le SEO",
-    "text5": "Communication claire et travail d'équipe fluide",
-    "text6": "Approche pixel-perfect et vigilance constante sur la qualité du code et la sécurité des données",
-    "text7": "Mon CV ici"
+    "title": "Compétences techniques & Soft Skills",
+    "soft": {
+      "dev": {
+        "title": "Développement",
+        "description": "Code propre et efficace avec des frameworks modernes et les meilleures pratiques."
+      },
+      "responsive": {
+        "title": "Responsive Design",
+        "description": "Design centré utilisateur, alliant esthétique et fonctionnalité sur tous types d’écrans."
+      },
+      "adapt": {
+        "title": "Adaptabilité",
+        "description": "Apprentissage continu des nouvelles technos et agilité face aux changements."
+      },
+      "perf": {
+        "title": "Performance",
+        "description": "Solutions optimisées pour la vitesse, l’accessibilité et le SEO."
+      },
+      "collab": {
+        "title": "Collaboration",
+        "description": "Communication claire et travail d’équipe fluide."
+      },
+      "rigueur": {
+        "title": "Rigueur & Détails",
+        "description": "Approche pixel-perfect et vigilance constante sur la qualité du code et la sécurité."
+      }
+    },
+    "text_CV": "Cliquez ici pour télécharger mon CV"
   },
+
   "projects": {
     "label": "Mes projets",
     "title": "Projets sélectionnés",

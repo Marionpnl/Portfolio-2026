@@ -10,31 +10,48 @@
     "title": "I create <sage>meaningful</sage> digital experiences",
     "cta_projects": "See my projects",
     "cta_projects_mobile": "My projects",
-    "cta_contact": "Contact me"
+    "cta_contact": "Contact me",
+    "text1": "Find me on"
   },
   "about": {
     "label": "About",
     "title": "Empathy at the service of logic",
-    "text1": "As a former nurse turned web developer, I chose this path because everything that motivated me in my previous career is here too: rigor, attention to detail, and problem-solving. I enjoy the logic of code just as much as crafting a polished interface. Trained on the MERN stack, I have worked across every layer — integration, React frontend, secure REST API, SEO, performance and accessibility — and I used the creation of this portfolio as an opportunity to learn TypeScript, adding an extra layer of reliability to my code. What all these experiences have in common: each time, I learned fast, on my own, and until I truly mastered it. I am methodical and rigorous, I structure before I act, and I deliver work I am proud of. Based in Yverdon-les-Bains, I am looking for my first web development position, in a team where continuous learning is valued.",
-    "text2": "Find me on",
+    "text1_description": "As a former nurse turned web developer, I chose this path because everything that motivated me in my previous career is here too: rigor, attention to detail, and problem-solving. I enjoy the logic of code just as much as crafting a polished interface.",
+    "text2_description": "Trained on the MERN stack, I have worked across every layer — integration, React frontend, secure REST API, SEO, performance and accessibility — and I used the creation of this portfolio as an opportunity to learn TypeScript, adding an extra layer of reliability to my code.",
+    "text3_description": "What all these experiences have in common: each time, I learned fast, on my own, and until I truly mastered it. I am methodical and rigorous, I structure before I act, and I deliver work I am proud of.",
+    "text4_description": "Based in Yverdon-les-Bains, I am looking for my first web development position, in a team where continuous learning is valued.",
     "location": "Yverdon-les-Bains"
   },
   "skills": {
     "label": "Skills",
-    "title1": "Technical Skills & Soft Skills",
-    "title2": "Development",
-    "title3": "Responsive Design",
-    "title4": "Adaptability",
-    "title5": "Performance",
-    "title6": "Collaboration",
-    "title7": "Attention to Detail",
-    "text1": "Clean and efficient code using modern frameworks and best practices",
-    "text2": "User-centered design, balancing aesthetics and functionality across all screen sizes",
-    "text3": "Continuous learning of new technologies and agility in the face of change",
-    "text4": "Optimized solutions for speed, accessibility and SEO",
-    "text5": "Clear communication and smooth teamwork throughout projects",
-    "text6": "Pixel-perfect approach with constant attention to code quality and data security",
-    "text7": "My resume here"
+    "title": "Technical Skills & Soft Skills",
+    "soft": {
+      "dev": {
+        "title": "Development",
+        "description": "Clean and efficient code using modern frameworks and best practices."
+      },
+      "responsive": {
+        "title": "Responsive Design",
+        "description": "User-centered design, combining aesthetics and functionality across all screen sizes."
+      },
+      "adapt": {
+        "title": "Adaptability",
+        "description": "Continuous learning of new technologies and agility in the face of change."
+      },
+      "perf": {
+        "title": "Performance",
+        "description": "Optimized solutions for speed, accessibility and SEO."
+      },
+      "collab": {
+        "title": "Collaboration",
+        "description": "Clear communication and seamless teamwork"
+      },
+      "rigueur": {
+        "title": "Rigour & Detail",
+        "description": "Pixel-perfect approach and constant vigilance regarding code quality and data security."
+      }
+    },
+    "text_CV": "Click here to download my CV"
   },
   "projects": {
     "label": "My projects",

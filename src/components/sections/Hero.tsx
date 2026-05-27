@@ -60,7 +60,7 @@ const Hero = () => {
         <div className="flex items-baseline">
           {/* GitHub */}
           <a
-            href="https://github.com/tonpseudo"
+            href="https://github.com/Marionpnl"
             target="_blank"
             rel="noopener noreferrer"
             className="w-9 h-9 flex items-center justify-center rounded-full text-black hover:bg-green/50 hover:text-white transition-all duration-200"
@@ -90,7 +90,7 @@ const Hero = () => {
 
           {/* LinkedIn */}
           <a
-            href="https://linkedin.com/in/tonpseudo"
+            href="https://linkedin.com/in/marion-penel-bb2a383a3/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-9 h-9 flex items-center justify-center rounded-full text-black hover:bg-green/50 hover:text-white transition-all duration-200"
