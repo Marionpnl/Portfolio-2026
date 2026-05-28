@@ -150,6 +150,7 @@
     "submit": "Send"
   },
   "footer": {
-    "text": "© 2026 Marion Penel. All rights reserved"
+    "rights": "All rights reserved",
+    "back_to_top": "Back to top"
   }
 }

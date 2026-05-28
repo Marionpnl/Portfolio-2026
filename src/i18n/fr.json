@@ -151,6 +151,7 @@
     "submit": "Envoyer"
   },
   "footer": {
-    "text": "© 2026 Marion Penel. Tous droits réservés"
+    "rights": "Tous droits réservés",
+    "back_to_top": "Retour en haut"
   }
 }
