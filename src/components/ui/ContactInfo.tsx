@@ -43,7 +43,7 @@ export const ContactInfo = () => {
               href="mailto:marionpenel3@gmail.com"
               className="text-xs md:text-sm font-medium hover:underline hover:text-base transition-colors text-cream"
             >
-              marionpenel3@gmail.com
+              marion.penel3@gmail.com
             </a>
           </div>
         </div>

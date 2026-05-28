@@ -53,7 +53,7 @@ const Hero = () => {
       {/* Réseaux sociaux */}
       <div className="flex justify-end items-center gap-3">
         <div>
-          <span className="text-xs md:text-sm text-[#1C1C1A]">
+          <span className="text-xs tracking-widest md:text-sm text-[#1C1C1A]">
             {t('hero.text1')}
           </span>
         </div>
@@ -72,6 +72,7 @@ const Hero = () => {
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="md:w-5 h-5"
             >
               <path
                 d="M2.1875 9.79251C2.46875 9.82626 2.67708 9.95501 2.8125 10.1788C3.01625 10.5144 3.77313 11.7575 4.63313 11.7575H5.9375M9.4825 9.56189C9.82542 10.0111 9.99687 10.4144 9.99687 10.7719V13.125M6.48125 9.61939C6.11875 10.0169 5.93771 10.3946 5.93813 10.7525V13.125"
@@ -102,6 +103,7 @@ const Hero = () => {
               viewBox="0 0 15 15"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="md:w-5 h-5"
             >
               <path
                 fill-rule="evenodd"

@@ -11,10 +11,49 @@ export const ContactForm = () => {
     message: '',
   });
 
-  const handleSubmit = (e: FormEvent) => {
+  // States pour gérer l'état de soumission du formulaire et les retours d'UX
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<
+    'IDLE' | 'SUCCESS' | 'ERROR'
+  >('IDLE');
+
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    // Intégrer ici la logique d'envoi du formulaire
-    console.log('Formulaire envoyé :', formData);
+    setIsSubmitting(true);
+    setSubmitStatus('IDLE');
+
+    // FormData pour envoyer les données au format multipart/form-data
+    const dataToSend = new FormData();
+    dataToSend.append('access_key', import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
+    dataToSend.append('name', formData.name);
+    dataToSend.append('email', formData.email);
+    dataToSend.append('message', formData.message);
+    dataToSend.append(
+      'subject',
+      `Nouveau message Portfolio de ${formData.name}`
+    );
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: dataToSend,
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        setSubmitStatus('SUCCESS');
+        // Succès : On vide le state React pour nettoyer les champs à l'écran
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setSubmitStatus('ERROR');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus('ERROR');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -34,10 +73,11 @@ export const ContactForm = () => {
           type="text"
           id="name"
           required
+          disabled={isSubmitting}
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
           placeholder={t('contact.name_placeholder')}
-          className="w-full font-dm text-xs md:text-sm text-black bg-transparent border border-sage/50 rounded-xl px-3 md:px-4 py-2 outline-none focus:border-green/50 transition-colors"
+          className="w-full font-dm text-xs md:text-sm text-black bg-transparent border border-sage/50 rounded-xl px-3 md:px-4 py-2 outline-none focus:border-green/50 transition-colors disabled:opacity-50"
         />
       </div>
 
@@ -53,10 +93,11 @@ export const ContactForm = () => {
           type="email"
           id="email"
           required
+          disabled={isSubmitting}
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
           placeholder={t('contact.email_placeholder')}
-          className="w-full font-dm text-xs md:text-sm text-black bg-transparent border border-sage/50 rounded-xl px-3 md:px-4 py-2 outline-none focus:border-green/50 transition-colors"
+          className="w-full font-dm text-xs md:text-sm text-black bg-transparent border border-sage/50 rounded-xl px-3 md:px-4 py-2 outline-none focus:border-green/50 transition-colors disabled:opacity-50"
         />
       </div>
 
@@ -72,22 +113,40 @@ export const ContactForm = () => {
           id="message"
           required
           rows={4}
+          disabled={isSubmitting}
           value={formData.message}
           onChange={(e) =>
             setFormData({ ...formData, message: e.target.value })
           }
           placeholder={t('contact.message_placeholder')}
-          className="w-full font-dm text-xs md:text-sm text-black bg-transparent border border-sage/50 rounded-xl px-3 md:px-4 py-2 md:py-3 outline-none focus:border-green/50 transition-colors resize-none"
+          className="w-full font-dm text-xs md:text-sm text-black bg-transparent border border-sage/50 rounded-xl px-3 md:px-4 py-2 md:py-3 outline-none focus:border-green/50 transition-colors resize-none disabled:opacity-50"
         />
       </div>
 
       {/* Bouton Envoyer */}
       <button
         type="submit"
-        className="w-fit self-center bg-green hover:bg-green/90 text-cream font-dm font-bold text-sm md:text-base px-8 py-1.5 md:px-10 md:py-2 rounded-full transition-transform duration-300 hover:scale-105 shadow-md cursor-pointer mt-2"
+        disabled={isSubmitting}
+        className="w-fit self-center bg-green hover:bg-green/90 text-cream font-dm font-bold text-sm md:text-base px-8 py-1.5 md:px-10 md:py-2 rounded-full transition-transform duration-300 hover:scale-105 shadow-md cursor-pointer mt-2 disabled:opacity-50 disabled:hover:scale-100"
       >
-        {t('contact.submit')}
+        {isSubmitting ? t('contact.sending', 'Envoi...') : t('contact.submit')}
       </button>
+
+      {/* Messages de state UX discrets */}
+      {submitStatus === 'SUCCESS' && (
+        <p className="text-green text-xs font-dm font-medium text-center mt-1">
+          {t('contact.success_message', 'Votre message a bien été envoyé !')}
+        </p>
+      )}
+
+      {submitStatus === 'ERROR' && (
+        <p className="text-terra text-xs font-dm font-medium text-center mt-1">
+          {t(
+            'contact.error_message',
+            'Une erreur est survenue. Veuillez réessayer.'
+          )}
+        </p>
+      )}
     </form>
   );
 };

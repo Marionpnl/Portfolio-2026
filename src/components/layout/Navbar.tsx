@@ -44,6 +44,12 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarProps) => {
       observerOptions
     );
 
+    // On observe la section Hero
+    const heroElement = document.getElementById('hero');
+    if (heroElement) {
+      observer.observe(heroElement);
+    }
+
     // On observe chaque section ciblée par nos liens de navigation
     navLinks.forEach((link) => {
       const id = link.href.replace('#', '');
