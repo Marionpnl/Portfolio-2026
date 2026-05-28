@@ -49,6 +49,14 @@ export interface ContactForm {
 // ============================================
 // COMPOSANTS — PROPS
 // ============================================
+export interface NavbarProps {
+  isOpen: boolean;
+  setIsOpen: (open: boolean) => void;
+}
+
+export interface BackToTopProps {
+  isMenuOpen: boolean;
+}
 export interface ProjectCardProps {
   project: Project;
   isFeatured: boolean; // Ajouté pour gérer la grande carte asymétrique

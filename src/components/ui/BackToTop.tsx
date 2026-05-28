@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import type { BackToTopProps } from '../../types';
 
-export const BackToTop = () => {
+export const BackToTop = ({ isMenuOpen }: BackToTopProps) => {
   const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
   const [isOverDarkBg, setIsOverDarkBg] = useState(false);
@@ -19,10 +20,10 @@ export const BackToTop = () => {
       const contactSection = document.getElementById('contact');
       if (contactSection) {
         const rect = contactSection.getBoundingClientRect();
-        // Si le haut de la section contact est passé au-dessus du bouton (ou proche du bas de l'écran)
-        // et que le bas de la section n'est pas encore totalement remonté.
         const buttonY = window.innerHeight - 80; // Position approximative du bouton à l'écran
 
+        // Si le haut de la section contact est passé au-dessus du bouton (ou proche du bas de l'écran)
+        // et que le bas de la section n'est pas encore totalement remonté.
         if (rect.top <= buttonY && rect.bottom >= buttonY) {
           setIsOverDarkBg(true);
         } else {
@@ -34,16 +35,16 @@ export const BackToTop = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  // Si le menu mobile est ouvert, on cache la flèche
+  if (!isVisible || isMenuOpen) return null;
 
-  if (!isVisible) return null;
-
-  const BackToTop = () => {
+  const handleBackToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
     <button
-      onClick={BackToTop}
+      onClick={handleBackToTop}
       className={`fixed bottom-6 right-3 md:right-10 z-50 
         w-8 h-8 md:w-10 md:h-10 rounded-full bg-transparent flex items-center justify-center 
         transition-all duration-300 hover:scale-105 cursor-pointer animate-fade-in

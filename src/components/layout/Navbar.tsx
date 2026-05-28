@@ -3,6 +3,7 @@ import type { NavLink } from '../../types';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '../ui/LanguageSwitcher';
 import { Menu, X } from 'lucide-react';
+import type { NavbarProps } from '../../types';
 
 const navLinks: NavLink[] = [
   { label: 'nav.about', href: '#about' },
@@ -11,11 +12,8 @@ const navLinks: NavLink[] = [
   { label: 'nav.contact', href: '#contact' },
 ];
 
-const Navbar = () => {
+const Navbar = ({ isOpen, setIsOpen }: NavbarProps) => {
   const { t } = useTranslation();
-
-  // State pour gérer l'ouverture du menu mobile
-  const [isOpen, setIsOpen] = useState(false);
 
   // State pour stocker l'ID de la section actuellement active
   const [activeSection, setActiveSection] = useState('#hero');

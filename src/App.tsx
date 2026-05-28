@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Navbar from './components/layout/Navbar';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
@@ -8,9 +9,11 @@ import Footer from './components/layout/Footer';
 import { BackToTop } from './components/ui/BackToTop';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <>
-      <Navbar />
+      <Navbar isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
       <main className="pt-16">
         <Hero />
         <About />
@@ -19,7 +22,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
-      <BackToTop />
+      <BackToTop isMenuOpen={isMenuOpen} />
     </>
   );
 }
