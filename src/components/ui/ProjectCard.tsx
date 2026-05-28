@@ -18,7 +18,7 @@ export const ProjectCard = ({
       }`}
     >
       {/* ZONE IMAGE */}
-      <div className="w-full bg-[#E5E9E6]/30 rounded-2xl p-6 flex items-center justify-center overflow-hidden border border-black/5 min-h-[260px] md:min-h-[380px]">
+      <div className="w-full bg-[#E5E9E6]/30 rounded-2xl p-6 flex items-center justify-center overflow-hidden border border-black/5 min-h-65 md:min-h-95">
         <img
           src={project.image}
           alt={project.slug}
