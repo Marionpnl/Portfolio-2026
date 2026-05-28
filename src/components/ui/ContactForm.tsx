@@ -20,15 +20,15 @@ export const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="w-full max-w-[440px] bg-cream p-6 md:p-8 rounded-[32px] shadow-[0_10px_30px_rgba(0,0,0,0.08)] flex flex-col gap-5 self-center lg:self-auto"
+      className="w-full max-w-70 md:max-w-110 bg-cream p-10 md:p-13 rounded-3xl shadow-[0_4px_4px_rgba(0,0,0,0.25)] flex flex-col gap-5 self-center lg:self-auto"
     >
       {/* Champ Nom */}
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 md:gap-3">
         <label
           htmlFor="name"
-          className="font-space font-bold text-xs md:text-sm text-black"
+          className="font-dm font-medium text-sm md:text-base text-black"
         >
-          {t('contact.form.name_label', 'Nom')}
+          {t('contact.name')}
         </label>
         <input
           type="text"
@@ -36,18 +36,18 @@ export const ContactForm = () => {
           required
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-          placeholder={t('contact.form.name_placeholder', 'Votre nom')}
-          className="w-full font-dm text-xs md:text-sm text-black bg-transparent border border-black/10 rounded-xl px-4 py-3 outline-none focus:border-green/50 transition-colors"
+          placeholder={t('contact.name_placeholder')}
+          className="w-full font-dm text-xs md:text-sm text-black bg-transparent border border-sage/50 rounded-xl px-3 md:px-4 py-2 outline-none focus:border-green/50 transition-colors"
         />
       </div>
 
       {/* Champ E-mail */}
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 md:gap-3">
         <label
           htmlFor="email"
-          className="font-space font-bold text-xs md:text-sm text-black"
+          className="font-dm font-medium text-sm md:text-base text-black"
         >
-          {t('contact.form.email_label', 'E-mail')}
+          {t('contact.email')}
         </label>
         <input
           type="email"
@@ -55,18 +55,18 @@ export const ContactForm = () => {
           required
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-          placeholder={t('contact.form.email_placeholder', 'Votre e-mail')}
-          className="w-full font-dm text-xs md:text-sm text-black bg-transparent border border-black/10 rounded-xl px-4 py-3 outline-none focus:border-green/50 transition-colors"
+          placeholder={t('contact.email_placeholder')}
+          className="w-full font-dm text-xs md:text-sm text-black bg-transparent border border-sage/50 rounded-xl px-3 md:px-4 py-2 outline-none focus:border-green/50 transition-colors"
         />
       </div>
 
       {/* Champ Message */}
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 md:gap-3">
         <label
           htmlFor="message"
-          className="font-space font-bold text-xs md:text-sm text-black"
+          className="font-dm font-medium text-sm md:text-base text-black"
         >
-          {t('contact.form.message_label', 'Message')}
+          {t('contact.message')}
         </label>
         <textarea
           id="message"
@@ -76,20 +76,17 @@ export const ContactForm = () => {
           onChange={(e) =>
             setFormData({ ...formData, message: e.target.value })
           }
-          placeholder={t(
-            'contact.form.message_placeholder',
-            'Parlez-moi de votre projet...'
-          )}
-          className="w-full font-dm text-xs md:text-sm text-black bg-transparent border border-black/10 rounded-xl px-4 py-3 outline-none focus:border-green/50 transition-colors resize-none"
+          placeholder={t('contact.message_placeholder')}
+          className="w-full font-dm text-xs md:text-sm text-black bg-transparent border border-sage/50 rounded-xl px-3 md:px-4 py-2 md:py-3 outline-none focus:border-green/50 transition-colors resize-none"
         />
       </div>
 
       {/* Bouton Envoyer */}
       <button
         type="submit"
-        className="w-fit self-center bg-green hover:bg-green/90 text-white font-dm font-medium text-xs md:text-sm px-8 py-2.5 rounded-full transition-transform duration-300 hover:scale-105 shadow-md cursor-pointer mt-2"
+        className="w-fit self-center bg-green hover:bg-green/90 text-cream font-dm font-bold text-sm md:text-base px-8 py-1.5 md:px-10 md:py-2 rounded-full transition-transform duration-300 hover:scale-105 shadow-md cursor-pointer mt-2"
       >
-        {t('contact.form.submit', 'Envoyer')}
+        {t('contact.submit')}
       </button>
     </form>
   );

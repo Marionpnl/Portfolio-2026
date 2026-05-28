@@ -9,7 +9,7 @@ const Hero = () => {
       className="min-h-screen bg-cream flex flex-col pt-20 md:pt-48 px-6 md:px-10"
     >
       <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between md:mb-14">
-        {/* SÉQUENCE 1 : Tag & Titre (Effet Reveal automatique au chargement) */}
+        {/*Tag & Titre*/}
         <div className="animate-reveal">
           <p className="text-black font-dm font-medium tracking-widest text-xs md:text-sm mb-6">
             {t('hero.tag')}
@@ -27,7 +27,7 @@ const Hero = () => {
           </h1>
         </div>
 
-        {/* SÉQUENCE 2 : Les deux CTA (Effet Pop-In déclenché après 1.2 seconde de délai) */}
+        {/*Les deux CTA */}
         <div
           className="animate-pop opacity-0 flex sm:flex-row justify-center gap-5 items-start mb-14"
           style={{ animationDelay: '1200ms' }}
@@ -50,7 +50,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      {/* Réseaux sociaux — bas à droite */}
+      {/* Réseaux sociaux */}
       <div className="flex justify-end items-center gap-3">
         <div>
           <span className="text-xs md:text-sm text-[#1C1C1A]">

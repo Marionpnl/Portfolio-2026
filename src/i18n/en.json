@@ -133,7 +133,8 @@
   },
   "contact": {
     "label": "Contact",
-    "title": "Let's work together.",
+    "title_prefix": "Let's work",
+    "title_highlight": " together",
     "description": "An opportunity, a project, or just want to chat? I reply to every message.",
     "label_email": "E-mail",
     "label_location": "Location",
@@ -141,12 +142,12 @@
     "location": "Yverdon-les-Bains, Switzerland",
     "availability": "Open to opportunities",
     "name": "Name",
-    "text_name": "Your name",
+    "name_placeholder": "Your name",
     "email": "E-mail",
-    "text_email": "Your e-mail",
+    "email_placeholder": "Your e-mail",
     "message": "Message",
-    "text_message": "Tell me about your project",
-    "send": "Send"
+    "message_placeholder": "Tell me about your project",
+    "submit": "Send"
   },
   "footer": {
     "text": "© 2026 Marion Penel. All rights reserved"

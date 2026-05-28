@@ -134,7 +134,8 @@
   },
   "contact": {
     "label": "Contact",
-    "title": "Travaillons ensemble.",
+    "title_prefix": "Travaillons",
+    "title_highlight": " ensemble",
     "description": "Une opportunité, un projet ou simplement envie d'échanger ? Je réponds à tous les messages.",
     "label_email": "E-mail",
     "label_location": "Localisation",
@@ -142,12 +143,12 @@
     "label_availability": "Disponibilité",
     "availability": "Ouverte aux opportunités",
     "name": "Nom",
-    "text_name": "Votre nom",
+    "name_placeholder": "Votre nom",
     "email": "E-mail",
-    "text_email": "Votre e-mail",
+    "email_placeholder": "Votre e-mail",
     "message": "Message",
-    "text_message": "Parlez-moi de votre projet",
-    "send": "Envoyer"
+    "message_placeholder": "Parlez-moi de votre projet",
+    "submit": "Envoyer"
   },
   "footer": {
     "text": "© 2026 Marion Penel. Tous droits réservés"
