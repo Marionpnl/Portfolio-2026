@@ -97,7 +97,7 @@ export const Footer = () => {
         </nav>
       </div>
 
-      {/* SECONDE ZONE : Ligne de séparation, Copyright & Top Arrow */}
+      {/* SECONDE ZONE : Ligne de séparation & Copyright */}
       <div className="max-w-6xl w-full mx-auto pt-6 border-t border-black/10 flex items-center justify-center relative">
         {/* Mentions de copyright */}
         <p className="font-dm text-xs md:text-sm text-black text-center">
@@ -106,30 +106,6 @@ export const Footer = () => {
           </span>
           <span className="block md:inline">{t('footer.rights')}</span>
         </p>
-
-        {/* Flèche de retour en haut */}
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="absolute right-0 text-green hover:text-black transition-colors cursor-pointer"
-          aria-label={t('footer.back_to_top')}
-        >
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="md:w-8 h-8"
-          >
-            <path
-              d="M5 12L12 5L19 12M12 5V19"
-              stroke="#4A7C6F"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
       </div>
     </footer>
   );
