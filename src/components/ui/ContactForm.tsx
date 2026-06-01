@@ -135,16 +135,13 @@ export const ContactForm = () => {
       {/* Messages de state UX discrets */}
       {submitStatus === 'SUCCESS' && (
         <p className="text-green text-xs font-dm font-medium text-center mt-1">
-          {t('contact.success_message', 'Votre message a bien été envoyé !')}
+          {t('contact.success_message')}
         </p>
       )}
 
       {submitStatus === 'ERROR' && (
         <p className="text-terra text-xs font-dm font-medium text-center mt-1">
-          {t(
-            'contact.error_message',
-            'Une erreur est survenue. Veuillez réessayer.'
-          )}
+          {t('contact.error_message')}
         </p>
       )}
     </form>

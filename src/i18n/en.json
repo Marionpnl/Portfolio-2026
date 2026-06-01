@@ -147,7 +147,9 @@
     "email_placeholder": "Your e-mail",
     "message": "Message",
     "message_placeholder": "Tell me about your project",
-    "submit": "Send"
+    "submit": "Send",
+    "success_message": "Your message has been sent!",
+    "error_message": "An error occurred. Please try again."
   },
   "footer": {
     "rights": "All rights reserved",
