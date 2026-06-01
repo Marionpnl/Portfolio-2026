@@ -52,25 +52,31 @@ const Skills = () => {
 
           {/* COLONNE DROITE : HARD SKILLS + CV (5 COLONNES) */}
           <div className="flex flex-col gap-8 lg:col-span-5">
-            <div className="flex flex-wrap gap-3 md:max-w-82.5">
-              {hardSkills.map((tech) => (
-                <div
-                  key={tech.name}
-                  className="flex items-center gap-2 bg-cream border border-black/5 px-4 py-2.5 rounded-full shadow-[0_4px_4px_rgba(0,0,0,0.25)] transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_20px_rgba(45,74,62,0.06)] group"
-                >
-                  <i className={`${tech.icon} colored text-base shrink-0`} />
-                  <span className="font-dm font-medium text-xs text-black">
-                    {tech.name}
-                  </span>
-                </div>
-              ))}
-            </div>
+            {/* ZONE DES HARD SKILLS AVEC HALO LUMINEUX */}
+            <div className="relative w-full">
+              {/* 1. LE HALO FLOU DIFFUS (Arrière-plan : z-0) */}
+              <div className="absolute -bottom-25 left-10 w-70 md:w-115 h-70 md:h-115 rounded-full blur-[200px] md:blur-[250px] bg-sage z-0 pointer-events-none" />
 
+              {/* 2. LE CONTENEUR DES CHIPS (Premier plan : z-10 + relative obligatoire) */}
+              <div className="relative z-10 flex flex-wrap gap-3 md:max-w-82.5">
+                {hardSkills.map((tech) => (
+                  <div
+                    key={tech.name}
+                    className="flex items-center gap-2 bg-cream border border-black/5 px-4 py-2.5 rounded-full shadow-[0_4px_4px_rgba(0,0,0,0.25)] transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_20px_rgba(45,74,62,0.06)] group"
+                  >
+                    <i className={`${tech.icon} colored text-base shrink-0`} />
+                    <span className="font-dm font-medium text-xs text-black">
+                      {tech.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
             <a
               href="/cv_marion_penel.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-['Space_Grotesk'] font-medium text-sm text-black underline underline-offset-4 hover:text-terra transition-colors self-start mt-2"
+              className="animate-bounce relative z-10 font-space font-medium text-sm text-black underline underline-offset-4 hover:text-terra transition-colors self-start mt-2"
             >
               {t('skills.text_CV')}
             </a>
