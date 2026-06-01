@@ -12,8 +12,24 @@
   --color-terra: #b15f5f;
   --color-sage: #8fa89f;
   --color-black: #1c1c1a;
-}
 
+  --animate-typewriter:
+    typewriter 2s steps(20, end) forwards, blink 0.75s step-end infinite;
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+}
 body {
   font-family: var(--font-dm);
   background-color: var(--color-cream);

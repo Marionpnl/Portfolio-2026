@@ -13,22 +13,30 @@ const About = () => {
         </p>
 
         {/* Grille principale */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-25 items-center">
           {/* COLONNE GAUCHE — Photo */}
-          <div className="flex justify-center ">
-            <div>
-              <img
-                src={aboutPhoto}
-                alt="Photo de Marion Penel — développeuse web fullstack"
-                className="w-full h-full object-cover rounded-t-full rounded-b-[40%]"
+          <div className="flex justify-center pt-15">
+            <div className="relative w-full max-w-110 flex flex-col justify-end items-center">
+              {/* 1. Fond de la photo */}
+              <div
+                className={`absolute bottom-0 w-[90%] md:w-[110%] h-[110%] rounded-[40%] blur-[80px] z-0 transition-colors duration-500 bg-rose`}
               />
+
+              {/* 2. Photo */}
+              <div className="relative z-10 w-full overflow-hidden rounded-b-full">
+                <img
+                  src={aboutPhoto}
+                  alt="Photo de Marion Penel — développeuse web fullstack"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
             </div>
           </div>
 
           {/* COLONNE DROITE — Texte */}
           <div className="flex flex-col gap-10">
             {/* Titre */}
-            <h2 className="font-space text-center md:text-start text-[32px] md:text-[40px] font-bold text-[#1C1C1A] leading-tight">
+            <h2 className="font-space text-center md:text-start text-[32px] md:text-[40px] font-bold text-[#1C1C1A] leading-tight ">
               {t('about.title')}
             </h2>
 
