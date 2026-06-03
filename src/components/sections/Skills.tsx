@@ -19,7 +19,7 @@ const Skills = () => {
 
         {/* CONTENEUR GLOBAL */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
-          {/* GRILLE GAUCHE : SOFT SKILLS (7 COLONNES) */}
+          {/* GRILLE GAUCHE : SOFT SKILLS */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 lg:col-span-7 content-start">
             {softSkills.map((soft) => {
               const IconComponent = soft.icon;
@@ -50,14 +50,14 @@ const Skills = () => {
             })}
           </div>
 
-          {/* COLONNE DROITE : HARD SKILLS + CV (5 COLONNES) */}
+          {/* COLONNE DROITE : HARD SKILLS + CV */}
           <div className="flex flex-col gap-8 lg:col-span-5">
             {/* ZONE DES HARD SKILLS AVEC HALO LUMINEUX */}
             <div className="relative w-full">
-              {/* 1. LE HALO FLOU DIFFUS (Arrière-plan : z-0) */}
+              {/* 1. LE HALO FLOU DIFFUS */}
               <div className="absolute -bottom-25 left-10 w-70 md:w-115 h-70 md:h-115 rounded-full blur-[200px] md:blur-[250px] bg-sage z-0 pointer-events-none" />
 
-              {/* 2. LE CONTENEUR DES CHIPS (Premier plan : z-10 + relative obligatoire) */}
+              {/* 2. LE CONTENEUR DES CHIPS */}
               <div className="relative z-10 flex flex-wrap gap-3 md:max-w-82.5">
                 {hardSkills.map((tech) => (
                   <div

@@ -17,6 +17,13 @@ export const ContactForm = () => {
     'IDLE' | 'SUCCESS' | 'ERROR'
   >('IDLE');
 
+  // Validation : Le bouton est inactif si un champ est vide OU si l'envoi est en cours
+  const isButtonDisabled =
+    !formData.name.trim() ||
+    !formData.email.trim() ||
+    !formData.message.trim() ||
+    isSubmitting;
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -126,10 +133,12 @@ export const ContactForm = () => {
       {/* Bouton Envoyer */}
       <button
         type="submit"
-        disabled={isSubmitting}
-        className="w-fit self-center bg-green hover:bg-green/90 text-cream font-dm font-bold text-sm md:text-base px-8 py-1.5 md:px-10 md:py-2 rounded-full transition-transform duration-300 hover:scale-105 shadow-md cursor-pointer mt-2 disabled:opacity-50 disabled:hover:scale-100"
+        disabled={isButtonDisabled}
+        className={`w-fit self-center font-dm font-bold text-sm md:text-base px-8 py-1.5 md:px-10 md:py-2 rounded-full transition-transform duration-300 hover:scale-105 shadow-md mt-2 disabled:opacity-50 disabled:hover:scale-100
+      ${isButtonDisabled ? 'bg-sage/30 text-black/40 cursor-not-allowed shadow-none' : 'bg-green hover:bg-green/90 text-cream cursor-pointer'}
+        `}
       >
-        {isSubmitting ? t('contact.sending', 'Envoi...') : t('contact.submit')}
+        {isSubmitting ? t('contact.sending') : t('contact.submit')}
       </button>
 
       {/* Messages de state UX discrets */}

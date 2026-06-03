@@ -41,7 +41,7 @@ export const ContactInfo = () => {
             </p>
             <a
               href="mailto:marionpenel3@gmail.com"
-              className="text-xs md:text-sm font-medium hover:underline hover:text-base transition-colors text-cream"
+              className="text-xs md:text-sm font-medium hover:underline text-cream inline-block origin-left transition-all duration-300 ease-in-out hover:scale-110"
             >
               marion.penel3@gmail.com
             </a>
