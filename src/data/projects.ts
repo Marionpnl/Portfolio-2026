@@ -12,7 +12,7 @@ export const projects: Project[] = [
     category: 'front end',
     stack: ['React', 'React Router', 'Sass'],
     githubUrl: 'https://github.com/Marionpnl/Kasa-React-app',
-    liveUrl: 'https://kasa.vercel.app',
+    liveUrl: 'https://kasa-react-app-theta.vercel.app/',
     image: kasaImg,
   },
   {
@@ -31,7 +31,6 @@ export const projects: Project[] = [
     category: 'fullstack',
     stack: ['React', 'TypeScript', 'Tailwind v4'],
     githubUrl: 'https://github.com/Marionpnl/Portfolio-2026',
-    liveUrl: 'https://tonportfolio.vercel.app',
     image: portfolioImg,
   },
   {
