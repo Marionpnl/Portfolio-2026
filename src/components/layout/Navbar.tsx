@@ -69,7 +69,7 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarProps) => {
         <a
           href="#"
           onClick={closeMenu}
-          className="font-space text-2xl md:text-5xl font-semibold text-black"
+          className="focus:outline-none font-space text-2xl md:text-5xl font-semibold text-black"
         >
           M<span className="text-terra">.</span>Penel
         </a>

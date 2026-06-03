@@ -1,4 +1,8 @@
 import type { Project } from '../types/index';
+import ninaImg from '../assets/images/nina-carducci.png';
+import portfolioImg from '../assets/images/mon-portfolio.png';
+import grimoireImg from '../assets/images/mon-vieux-grimoire.png';
+import kasaImg from '../assets/images/kasa.png';
 
 export const projects: Project[] = [
   {
@@ -9,7 +13,7 @@ export const projects: Project[] = [
     stack: ['React', 'React Router', 'Sass'],
     githubUrl: 'https://github.com/tonpseudo/kasa',
     liveUrl: 'https://kasa.vercel.app',
-    image: '/images/kasa.png',
+    image: kasaImg,
   },
   {
     id: 2,
@@ -18,7 +22,7 @@ export const projects: Project[] = [
     category: 'back end',
     stack: ['Node.js', 'MongoDB', 'Express'],
     githubUrl: 'https://github.com/tonpseudo/mon-vieux-grimoire',
-    image: '/images/mon-vieux-grimoire.png',
+    image: grimoireImg,
   },
   {
     id: 3,
@@ -28,7 +32,7 @@ export const projects: Project[] = [
     stack: ['React', 'TypeScript', 'Tailwind v4'],
     githubUrl: 'https://github.com/tonpseudo/portfolio',
     liveUrl: 'https://tonportfolio.vercel.app',
-    image: '/images/portfolio.png',
+    image: portfolioImg,
   },
   {
     id: 4,
@@ -38,6 +42,6 @@ export const projects: Project[] = [
     stack: ['SEO', 'Performance', 'HTML/CSS'],
     githubUrl: 'https://github.com/tonpseudo/nina-carducci',
     liveUrl: 'https://nina-carducci.vercel.app',
-    image: '/images/nina-carducci.png',
+    image: ninaImg,
   },
 ];
