@@ -12,9 +12,11 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="w-full bg-cream py-8 px-6 md:px-12 lg:px-20 flex flex-col gap-6">
+    <footer className="relative w-full bg-cream py-10 px-6 md:px-12 lg:px-20 flex flex-col gap-6">
+      <div className="z-0 absolute top-5 right-55 md:top-10 md:left-15 w-90 md:w-150 h-40 md:h-60 rounded-full bg-rose blur-[110px] md:blur-[150px]" />
+
       {/* PREMIÈRE ZONE : Navigation & Réseaux Sociaux */}
-      <div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-4">
+      <div className="z-10 max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-4">
         {/* Blocs réseaux sociaux : Placé en haut sur mobile (order-1) et à droite sur desktop (md:order-2) */}
         <div className="flex items-center gap-4 order-1 md:order-2">
           {/* GitHub */}
@@ -75,7 +77,8 @@ export const Footer = () => {
           </a>
           {/* CV */}
           <a
-            href="#cv"
+            href="/cv_marion_penel.pdf"
+            target="_blank"
             className="w-8 h-8 md:w-9 md:h-9 rounded-full bg-sage/50 hover:bg-sage/80 flex items-center justify-center text-black text-[10px] md:text-sm font-dm font-medium tracking-tighter transition-colors"
             aria-label="CV"
           >
@@ -98,7 +101,7 @@ export const Footer = () => {
       </div>
 
       {/* SECONDE ZONE : Ligne de séparation & Copyright */}
-      <div className="max-w-6xl w-full mx-auto pt-6 border-t border-black/10 flex items-center justify-center relative">
+      <div className="max-w-6xl w-full mx-auto pt-10 border-t border-black/10 flex items-center justify-center relative">
         {/* Mentions de copyright */}
         <p className="font-dm text-xs md:text-sm text-black text-center">
           <span className="block md:inline">

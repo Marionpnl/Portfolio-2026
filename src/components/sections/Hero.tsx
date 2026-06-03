@@ -15,7 +15,7 @@ const Hero = () => {
         {/* Deuxième cercle flou (en haut à droite) */}
         <div className="absolute -top-20 -right-20 w-60 md:w-100 h-60 md:h-100 rounded-full bg-rose blur-[200px] md:blur-[280px]" />
       </div>
-      <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between md:mb-14">
+      <div className="w-full max-w-6xl mx-auto flex flex-col lg:flex-row md:items-center md:justify-between md:mb-14">
         {/*Tag & Titre*/}
         <div className="animate-reveal">
           <p className="text-black font-dm font-medium tracking-widest text-xs md:text-sm mb-6">
@@ -37,7 +37,7 @@ const Hero = () => {
         {/*Les deux CTA */}
         <div
           className="animate-pop opacity-0 flex sm:flex-row justify-center gap-5 items-start mb-14"
-          style={{ animationDelay: '1200ms' }}
+          style={{ animationDelay: '300ms' }}
         >
           {/* Bouton Principal - Voir mes projets */}
           <a
@@ -58,9 +58,9 @@ const Hero = () => {
         </div>
       </div>
       {/* Bas de page Hero : Flèche centrale et Réseaux sociaux */}
-      <div className="mt-8 md:mt-15 pt-10 flex flex-col md:flex-row md:items-center md:justify-between w-full gap-4 md:gap-0">
+      <div className="mt-8 md:mt-15 pt-10 flex flex-col lg:flex-row md:items-center md:justify-between w-full gap-4 lg:gap-0">
         {/* 1. Zone gauche invisible sur mobile, prend de la place sur desktop pour équilibrer */}
-        <div className="hidden md:block md:w-1/3" />
+        <div className="hidden lg:block lg:w-1/3" />
 
         {/* 2. La Flèche qui rebondit (Pile au centre) */}
         <div className="flex justify-center md:w-1/3 order-1">
@@ -99,6 +99,7 @@ const Hero = () => {
               className="w-9 h-9 flex items-center justify-center rounded-full text-black hover:bg-green/50 hover:text-white transition-all duration-200"
               aria-label="GitHub"
             >
+              <span className="sr-only">GitHub</span>
               <svg
                 width="15"
                 height="15"
@@ -130,6 +131,7 @@ const Hero = () => {
               className="w-9 h-9 flex items-center justify-center rounded-full text-black hover:bg-green/50 hover:text-white transition-all duration-200"
               aria-label="LinkedIn"
             >
+              <span className="sr-only">LinkedIn</span>
               <svg
                 width="15"
                 height="15"

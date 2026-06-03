@@ -34,6 +34,8 @@ body {
   font-family: var(--font-dm);
   background-color: var(--color-cream);
   color: var(--color-black);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Animations personnalisées */

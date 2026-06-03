@@ -64,26 +64,26 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarProps) => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-cream border-b border-green/15">
-      <nav className="w-full mx-auto px-6 md:px-10 py-4 flex justify-between items-center relative z-50 bg-cream">
+      <nav className="max-w-6xl w-full mx-auto px-6 md:px-10 py-4 flex justify-between items-center relative z-50 bg-cream">
         {/* Logo */}
         <a
           href="#"
           onClick={closeMenu}
-          className="focus:outline-none font-space text-2xl md:text-5xl font-semibold text-black"
+          className="focus:outline-none font-space text-xl md:text-4xl lg:text-5xl font-semibold text-black shrink-0"
         >
           M<span className="text-terra">.</span>Penel
         </a>
 
-        <div className="flex items-center gap-5 md:gap-10">
+        <div className="flex items-center gap-4 md:gap-10">
           {/* Liens Desktop */}
-          <ul className="hidden md:flex gap-7 h-full items-center">
+          <ul className="hidden lg:flex gap-7 items-center">
             {navLinks.map((link) => {
               const isActive = activeSection === link.href; // Vérification si actif
               return (
                 <li key={link.href} className="relative py-1">
                   <a
                     href={link.href}
-                    className={`text-xs uppercase tracking-widest text-black hover:text-terra font-medium transition-colors duration-200 block pb-1}
+                    className={`text-xs uppercase tracking-widest text-black hover:text-terra font-medium transition-colors duration-200 block pb-1
                     `}
                   >
                     {t(link.label)}
@@ -98,10 +98,13 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarProps) => {
               );
             })}
           </ul>
-
+          <div className="shrink-0 scale-90 sm:scale-100 origin-right">
+            {/* Switcher langue */}
+            <LanguageSwitcher />
+          </div>
           {/* Bouton Hamburger Mobile */}
           <button
-            className="block md:hidden p-2 text-black hover:text-terra transition-colors relative z-50"
+            className="block lg:hidden p-2 text-black hover:text-terra transition-colors relative z-50 shrink-0"
             onClick={toggleMenu}
             aria-label={isOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
           >
@@ -111,15 +114,12 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarProps) => {
               <Menu size={26} strokeWidth={1.5} />
             )}
           </button>
-
-          {/* Switcher langue */}
-          <LanguageSwitcher />
         </div>
       </nav>
 
       {/* MENU MOBILE DEROULANT */}
       <div
-        className={`fixed inset-0 top-16.25 md:hidden bg-cream border-b border-green/15 transition-all duration-300 ease-in-out z-40 flex flex-col items-center justify-center ${
+        className={`fixed inset-0 top-16.25 lg:hidden bg-cream border-b border-green/15 transition-all duration-300 ease-in-out z-40 flex flex-col items-center justify-center ${
           isOpen
             ? 'opacity-100 translate-y-0 pointer-events-auto'
             : 'opacity-0 -translate-y-5 pointer-events-none'

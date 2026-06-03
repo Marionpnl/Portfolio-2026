@@ -5,7 +5,10 @@ const Skills = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="skills" className="py-20 px-6 md:px-10 bg-transparent">
+    <section
+      id="skills"
+      className="pt-20 md:py-20 px-6 md:px-10 bg-transparent"
+    >
       <div className="max-w-6xl mx-auto">
         {/* EN-TÊTE DE SECTION */}
         <div className="mb-12">

@@ -14,7 +14,7 @@ export const ProjectCard = ({
     <div
       onClick={onClick}
       className={`flex flex-col bg-cream border border-black/5 p-4 sm:p-6 rounded-3xl shadow-[0_4px_4px_rgba(0,0,0,0.25)] transition-all duration-300 hover:scale-[1.01] cursor-pointer group ${
-        isFeatured ? 'md:col-span-2' : ''
+        isFeatured ? 'lg:col-span-2' : ''
       }`}
     >
       {/* ZONE IMAGE */}
