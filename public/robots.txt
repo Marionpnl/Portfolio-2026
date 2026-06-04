@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+https://portfolio-dev-web-eta.vercel.app/
