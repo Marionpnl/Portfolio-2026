@@ -41,7 +41,7 @@ export const ContactInfo = () => {
             </p>
             <a
               href="mailto:marionpenel3@gmail.com"
-              className="text-xs md:text-sm font-medium hover:underline text-cream inline-block origin-left transition-all duration-300 ease-in-out hover:scale-110"
+              className="text-xs md:text-sm font-medium hover:underline text-white inline-block origin-left transition-all duration-300 ease-in-out hover:scale-110"
             >
               marion.penel3@gmail.com
             </a>
@@ -74,7 +74,7 @@ export const ContactInfo = () => {
             <p className="hidden md:block text-xs md:text-sm font-bold uppercase tracking-wider text-rose mb-1">
               {t('contact.label_location')}
             </p>
-            <p className="text-xs md:text-sm font-medium text-cream">
+            <p className="text-xs md:text-sm font-medium text-white">
               {t('contact.location')}
             </p>
           </div>
@@ -104,7 +104,7 @@ export const ContactInfo = () => {
             <p className="hidden md:block text-xs md:text-sm font-bold uppercase tracking-wider text-rose mb-1">
               {t('contact.label_availability')}
             </p>
-            <p className="text-xs md:text-sm font-medium text-cream">
+            <p className="text-xs md:text-sm font-medium text-white">
               {t('contact.availability')}
             </p>
           </div>
