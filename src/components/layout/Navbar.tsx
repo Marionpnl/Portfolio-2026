@@ -67,7 +67,7 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarProps) => {
       <nav className="w-full max-w-screen px-6 md:px-10 py-4 flex justify-between items-center relative z-50 bg-cream">
         {/* Logo */}
         <a
-          href="#"
+          href="#hero"
           onClick={closeMenu}
           className="focus:outline-none font-space text-xl md:text-4xl lg:text-5xl font-semibold text-black shrink-0"
         >

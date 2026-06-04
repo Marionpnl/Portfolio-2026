@@ -20,7 +20,7 @@ const LanguageSwitcher = () => {
             ${
               i18n.language === lang
                 ? 'bg-white text-black shadow-sm'
-                : 'bg-transparent text-black/40 hover:text-black'
+                : 'bg-transparent text-black/80 hover:text-black'
             }
           `}
         >
