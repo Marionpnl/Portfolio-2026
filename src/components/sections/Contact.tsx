@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="bg-green py-16 md:py-24 px-6 md:px-12 lg:px-20 flex items-center"
+      className="relative bg-green py-16 md:py-24 px-6 md:px-12 lg:px-20 flex items-center overflow-hidden"
     >
       <div className="relative max-w-6xl w-full mx-auto flex flex-col lg:flex-row lg:justify-between gap-16 lg:gap-10">
         {/* Partie Gauche : Textes & Infos de contact */}

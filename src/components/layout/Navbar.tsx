@@ -63,8 +63,8 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarProps) => {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-cream border-b border-green/15">
-      <nav className="max-w-6xl w-full mx-auto px-6 md:px-10 py-4 flex justify-between items-center relative z-50 bg-cream">
+    <header className="fixed top-0 left-0 w-screen z-50 bg-cream border-b border-green/15">
+      <nav className="w-full max-w-screen px-6 md:px-10 py-4 flex justify-between items-center relative z-50 bg-cream">
         {/* Logo */}
         <a
           href="#"
@@ -119,7 +119,7 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarProps) => {
 
       {/* MENU MOBILE DEROULANT */}
       <div
-        className={`fixed inset-0 top-16.25 lg:hidden bg-cream border-b border-green/15 transition-all duration-300 ease-in-out z-40 flex flex-col items-center justify-center ${
+        className={`fixed top-[65px] left-0 right-0 bottom-0 lg:hidden bg-cream border-b border-green/15 transition-all duration-300 ease-in-out z-40 flex flex-col items-center justify-center ${
           isOpen
             ? 'opacity-100 translate-y-0 pointer-events-auto'
             : 'opacity-0 -translate-y-5 pointer-events-none'

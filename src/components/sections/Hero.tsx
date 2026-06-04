@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen bg-cream flex flex-col pt-20 md:pt-48 px-6 md:px-10"
+      className="relative min-h-screen bg-cream flex flex-col pt-20 md:pt-48 px-6 md:px-10 overflow-hidden"
     >
-      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+      <div className="absolute inset-0 pointer-events-none z-0">
         {/* Premier cercle flou (en bas à gauche) */}
         <div className="absolute bottom-0 -left-15 md:-bottom-10 md:-left-40 w-70 md:w-130 h-70 md:h-130 rounded-full bg-sage blur-[150px] md:blur-[220px]" />
 
