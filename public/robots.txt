@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
-https://portfolio-dev-web-eta.vercel.app/
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /build/
+
+Sitemap: https://portfolio-dev-web-eta.vercel.app/sitemap.xml
