@@ -56,6 +56,7 @@ export interface NavbarProps {
 
 export interface BackToTopProps {
   isMenuOpen: boolean;
+  isModalOpen: boolean;
 }
 export interface ProjectCardProps {
   project: Project;
@@ -69,4 +70,8 @@ export interface ProjectModalProps {
   project: Project; // On passe le projet actif directement (la visibilité est gérée par le parent)
   onClose: () => void;
   techIcons: Record<string, string>;
+}
+
+export interface ProjectsProps {
+  setIsModalOpen: (isOpen: boolean) => void;
 }

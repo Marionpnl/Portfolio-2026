@@ -64,10 +64,10 @@ export const ProjectCard = ({
             return (
               <div
                 key={tech}
-                className="flex items-center gap-1.5 bg-cream shadow-[0_4px_4px_rgba(0,0,0,0.25)] border border-black/5 px-3 md:px-4 py-1.5 rounded-full"
+                className="flex items-center gap-1 bg-cream shadow-[0_4px_4px_rgba(0,0,0,0.25)] border border-black/5 px-2 md:px-4 py-1.5 rounded-full"
               >
                 <i className={`${iconClass} colored text-sm md:text-lg`} />
-                <span className="font-dm font-medium text-xs md:text-sm text-black/80">
+                <span className="font-dm font-medium text-[10px] md:text-sm text-black/80">
                   {tech}
                 </span>
               </div>

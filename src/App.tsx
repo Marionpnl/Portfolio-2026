@@ -11,6 +11,8 @@ import { BackToTop } from './components/ui/BackToTop';
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <>
       <Navbar isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
@@ -18,11 +20,11 @@ function App() {
         <Hero />
         <About />
         <Skills />
-        <Projects />
+        <Projects setIsModalOpen={setIsModalOpen} />
         <Contact />
       </main>
       <Footer />
-      <BackToTop isMenuOpen={isMenuOpen} />
+      <BackToTop isMenuOpen={isMenuOpen} isModalOpen={isModalOpen} />
     </>
   );
 }

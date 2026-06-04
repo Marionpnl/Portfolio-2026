@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { projects } from '../../data/projects';
 import { ProjectCard } from '../ui/ProjectCard';
 import { ProjectModal } from '../ui/ProjectModal';
+import type { ProjectsProps } from '../../types';
 
 // Dictionnaire pour lier les chaînes textuelles de la stack aux icônes Devicon
 const techIcons: Record<string, string> = {
@@ -15,9 +16,8 @@ const techIcons: Record<string, string> = {
   TypeScript: 'devicon-typescript-plain',
   'Tailwind v4': 'devicon-tailwindcss-plain',
   i18n: 'devicon-javascript-plain',
-  SEO: 'devicon-google-plain',
-  Performance: 'devicon-chrome-plain',
-  'HTML/CSS': 'devicon-html5-plain',
+  'SEO/Performance': 'devicon-google-plain',
+  HTML: 'devicon-html5-plain',
 };
 
 // Dictionnaire pour lier les catégories à leurs couleurs de label spécifiques
@@ -27,7 +27,7 @@ const categoryColors: Record<string, string> = {
   fullstack: 'text-rose',
 };
 
-const Projects = () => {
+const Projects = ({ setIsModalOpen }: ProjectsProps) => {
   const { t } = useTranslation();
   const [activeFilter, setActiveFilter] = useState<
     'all' | 'front end' | 'back end' | 'fullstack'
@@ -38,6 +38,16 @@ const Projects = () => {
     (typeof projects)[0] | null
   >(null);
 
+  const handleOpenModal = (project: (typeof projects)[0]) => {
+    setSelectedProject(project);
+    setIsModalOpen(true); // Dit à App.jsx de cacher la flèche
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+    setIsModalOpen(false); // Dit à App.jsx de réafficher la flèche
+  };
+
   const filteredProjects = projects.filter((project) => {
     if (activeFilter === 'all') return true;
     return project.category === activeFilter;
@@ -47,7 +57,7 @@ const Projects = () => {
     <section id="projects" className="py-20 px-6 md:px-10 bg-transparent">
       <div className="max-w-6xl mx-auto">
         {/* EN-TÊTE & FILTRES */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 gap-10">
+        <div className="flex flex-col lg:flex-row lg:items-end md:justify-between mb-12 gap-10">
           <div>
             <p className="text-black font-dm font-bold uppercase tracking-widest md:text-2xl mb-10">
               {t('projects.label')}
@@ -57,7 +67,7 @@ const Projects = () => {
             </h2>
           </div>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-2 md:gap-3">
             {(
               [
                 { id: 'all', label: t('projects.filter_all') },
@@ -69,7 +79,7 @@ const Projects = () => {
               <button
                 key={btn.id}
                 onClick={() => setActiveFilter(btn.id)}
-                className={`px-4 md:px-7 py-2 rounded-full font-dm font-medium text-xs md:text-[16px] transition-all duration-300 shadow-[0_2px_5px_rgba(0,0,0,0.05)] ${
+                className={`px-3 md:px-7 py-2 rounded-full font-dm font-medium text-xs md:text-[16px] transition-all duration-300 shadow-[0_2px_5px_rgba(0,0,0,0.05)] ${
                   activeFilter === btn.id
                     ? 'bg-green text-white scale-105'
                     : 'bg-sage/30 text-black/70 hover:bg-sage/40'
@@ -93,7 +103,7 @@ const Projects = () => {
                 isFeatured={isFeatured}
                 techIcons={techIcons}
                 categoryColors={categoryColors}
-                onClick={() => setSelectedProject(project)}
+                onClick={() => handleOpenModal(project)}
               />
             );
           })}
@@ -104,7 +114,7 @@ const Projects = () => {
           <ProjectModal
             project={selectedProject}
             techIcons={techIcons}
-            onClose={() => setSelectedProject(null)}
+            onClose={handleCloseModal}
           />
         )}
       </div>

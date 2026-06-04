@@ -38,7 +38,7 @@ export const projects: Project[] = [
     slug: 'ninaCarducci',
     year: 2026,
     category: 'front end',
-    stack: ['SEO', 'Performance', 'HTML/CSS'],
+    stack: ['SEO/Performance', 'HTML'],
     githubUrl: 'https://github.com/Marionpnl/Nina-Carducci',
     liveUrl: 'https://nina-carducci.vercel.app',
     image: ninaImg,

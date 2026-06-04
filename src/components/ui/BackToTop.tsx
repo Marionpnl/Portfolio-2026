@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { BackToTopProps } from '../../types';
 
-export const BackToTop = ({ isMenuOpen }: BackToTopProps) => {
+export const BackToTop = ({ isMenuOpen, isModalOpen }: BackToTopProps) => {
   const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
   const [isOverDarkBg, setIsOverDarkBg] = useState(false);
@@ -35,8 +35,8 @@ export const BackToTop = ({ isMenuOpen }: BackToTopProps) => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  // Si le menu mobile est ouvert, on cache la flèche
-  if (!isVisible || isMenuOpen) return null;
+  // Si le menu mobile ou la modale est ouverte, on cache la flèche
+  if (!isVisible || isMenuOpen || isModalOpen) return null;
 
   const handleBackToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
