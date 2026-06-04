@@ -1,8 +1,8 @@
 import type { Project } from '../types/index';
-import ninaImg from '../assets/images/nina-carducci.png';
-import portfolioImg from '../assets/images/mon-portfolio.png';
-import grimoireImg from '../assets/images/mon-vieux-grimoire.png';
-import kasaImg from '../assets/images/kasa.png';
+import ninaImg from '../assets/images/nina-carducci.webp';
+import portfolioImg from '../assets/images/mon-portfolio.webp';
+import grimoireImg from '../assets/images/mon-vieux-grimoire.webp';
+import kasaImg from '../assets/images/kasa.webp';
 
 export const projects: Project[] = [
   {

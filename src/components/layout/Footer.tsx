@@ -12,7 +12,7 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="relative w-full bg-cream py-10 px-6 md:px-12 lg:px-20 flex flex-col gap-6">
+    <footer className="relative w-full bg-cream py-10 px-6 md:px-12 lg:px-20 flex flex-col gap-6 overflow-hidden">
       <div className="z-0 absolute top-5 right-55 md:top-10 md:left-15 w-90 md:w-150 h-40 md:h-60 rounded-full bg-rose blur-[110px] md:blur-[150px]" />
 
       {/* PREMIÈRE ZONE : Navigation & Réseaux Sociaux */}
