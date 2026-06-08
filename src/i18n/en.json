@@ -129,6 +129,22 @@
         "Strict use of TypeScript interfaces to secure project data and transpose Figma Auto Layout into code.",
         "Integration of react-i18next with asynchronous loading of JSON translation files."
       ]
+    },
+    "booki": {
+      "category": "front end",
+      "title": "Booki",
+      "card_description": "HTML/CSS integration of a responsive interface for searching accommodation and tourist activities.",
+      "about": "Booki is a platform for searching holiday accommodation and activities. The objective of this project was to transform Figma mockups into a functional, clean and fully responsive web interface, strictly adhering to the provided design specifications.",
+      "challenges": [
+        "Faithfully reproducing both desktop and mobile mockups with pixel-perfect precision.",
+        "Mastering responsive layout without a CSS framework, using only Flexbox and Grid.",
+        "Structuring HTML semantically to ensure accessibility and code readability."
+      ],
+      "solutions": [
+        "Detailed analysis of Figma mockups to extract exact spacing, typography and breakpoints.",
+        "Use of Flexbox and CSS Grid to build fluid layouts adapted to all screen formats.",
+        "Rigorous structuring of semantic HTML5 tags to ensure a clear content hierarchy."
+      ]
     }
   },
   "contact": {

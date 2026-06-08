@@ -15,14 +15,14 @@ const Hero = () => {
         {/* Deuxième cercle flou (en haut à droite) */}
         <div className="absolute -top-20 -right-20 w-60 md:w-100 h-60 md:h-100 rounded-full bg-rose blur-[200px] md:blur-[280px]" />
       </div>
-      <div className="w-full max-w-6xl mx-auto flex flex-col lg:flex-row md:items-center md:justify-between md:mb-14">
+      <div className="w-full max-w-6xl 2xl:max-w-7xl mx-auto flex flex-col lg:flex-row md:items-center md:justify-between md:mb-14">
         {/*Tag & Titre*/}
         <div className="animate-reveal">
-          <p className="text-black font-dm font-medium tracking-widest text-xs md:text-sm mb-6">
+          <p className="text-black font-dm font-medium tracking-widest text-xs md:text-sm 2xl:text-lg mb-6 lg:mb-8 2xl:mb-15">
             {t('hero.tag')}
           </p>
 
-          <h1 className="font-space text-4xl md:text-[48px] font-bold text-black leading-[1.2] max-w-5xl mb-20 md:mb-14 tracking-tight">
+          <h1 className="font-space text-4xl md:text-[48px] 2xl:text-6xl font-bold text-black leading-[1.2] max-w-5xl mb-20 md:mb-14 tracking-tight">
             <Trans
               i18nKey="hero.title"
               components={{
@@ -42,7 +42,7 @@ const Hero = () => {
           {/* Bouton Principal - Voir mes projets */}
           <a
             href="#projects"
-            className="px-6 py-2.5 md:px-8 flex items-center justify-center bg-sage text-cream rounded-full font-dm font-bold text-sm md:text-[16px] text-center transition-all hover:bg-green hover:scale-105 active:scale-95 shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
+            className="px-6 py-2.5 md:px-8 flex items-center justify-center bg-sage text-cream rounded-full font-dm font-bold text-sm md:text-[16px] 2xl:text-lg text-center transition-all hover:bg-green hover:scale-105 active:scale-95 shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
           >
             <span className="md:hidden">{t('hero.cta_projects_mobile')}</span>
             <span className="hidden md:inline">{t('hero.cta_projects')}</span>
@@ -51,14 +51,14 @@ const Hero = () => {
           {/* Bouton Secondaire - Me contacter */}
           <a
             href="#contact"
-            className="px-6 py-2.5 md:px-8 flex items-center justify-center bg-cream text-black rounded-full font-dm font-bold text-sm md:text-[16px] text-center transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
+            className="px-6 py-2.5 md:px-8 flex items-center justify-center bg-cream text-black rounded-full font-dm font-bold text-sm md:text-[16px] 2xl:text-lg  text-center transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
           >
             {t('hero.cta_contact')}
           </a>
         </div>
       </div>
       {/* Bas de page Hero : Flèche centrale et Réseaux sociaux */}
-      <div className="mt-8 md:mt-15 pt-10 flex flex-col lg:flex-row md:items-center md:justify-between w-full gap-4 lg:gap-0">
+      <div className="mt-8 md:mt-15 2xl:mt-30 pt-10 flex flex-col lg:flex-row md:items-center md:justify-between w-full gap-4 lg:gap-0">
         {/* 1. Zone gauche invisible sur mobile, prend de la place sur desktop pour équilibrer */}
         <div className="hidden lg:block lg:w-1/3" />
 

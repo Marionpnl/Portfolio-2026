@@ -3,6 +3,7 @@ import ninaImg from '../assets/images/nina-carducci.webp';
 import portfolioImg from '../assets/images/mon-portfolio.webp';
 import grimoireImg from '../assets/images/mon-vieux-grimoire.webp';
 import kasaImg from '../assets/images/kasa.webp';
+import bookiImg from '../assets/images/booki.webp';
 
 export const projects: Project[] = [
   {
@@ -42,5 +43,15 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/Marionpnl/Nina-Carducci',
     liveUrl: 'https://nina-carducci.vercel.app',
     image: ninaImg,
+  },
+  {
+    id: 5,
+    slug: 'booki',
+    year: 2025,
+    category: 'front end',
+    stack: ['HTML', 'CSS'],
+    githubUrl: 'https://github.com/Marionpnl/Booki',
+    liveUrl: 'https://booki-gray.vercel.app/',
+    image: bookiImg,
   },
 ];

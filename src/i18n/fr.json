@@ -130,6 +130,22 @@
         "Réécriture sémantique des balises HTML, intégration des balises Schema.org (données structurées) et Meta Open Graph.",
         "Correction des contrastes, ajout des attributs alt et aria-label manquants et implémentation d'une navigation au clavier fluide."
       ]
+    },
+    "booki": {
+      "category": "Front end",
+      "title": "Booki",
+      "card_description": "Intégration HTML/CSS d'une interface responsive de recherche d'hébergements et d'activités touristiques.",
+      "about": "Booki est une plateforme de recherche de logements et d'activités de vacances. L'objectif de ce projet était de transformer des maquettes Figma en une interface web fonctionnelle, propre et entièrement responsive, en respectant scrupuleusement les spécifications graphiques fournies",
+      "challenges": [
+        "Reproduire fidèlement les maquettes desktop et mobile avec une précision pixel-perfect.",
+        "Maîtriser la mise en page responsive sans framework CSS en utilisant uniquement Flexbox et Grid.",
+        "Structurer le HTML de manière sémantique pour garantir l'accessibilité et la lisibilité du code."
+      ],
+      "solutions": [
+        "Analyse détaillée des maquettes Figma pour extraire les espacements, typographies et breakpoints exacts.",
+        "Utilisation de Flexbox et CSS Grid pour construire des layouts fluides adaptés à tous les formats d'écran.",
+        "Structuration rigoureuse des balises HTML5 sémantiques pour assurer une hiérarchie de contenu claire."
+      ]
     }
   },
   "contact": {
