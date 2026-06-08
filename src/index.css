@@ -103,3 +103,13 @@ body {
   /* L'animation attend 1s (le temps que le texte apparaisse) puis se dessine en 0.6s */
   animation: drawLine 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 1000ms forwards;
 }
+
+/* Correction Firefox — les blobs trop opaques */
+@-moz-document url-prefix() {
+  .blob {
+    opacity: 0.4;
+  }
+  .blob-green {
+    opacity: 0.55;
+  }
+}

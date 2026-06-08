@@ -11,7 +11,7 @@ const Contact = () => {
         {/* Partie Gauche : Textes & Infos de contact */}
         <ContactInfo />
 
-        <div className="absolute bottom-90 md:bottom-10 left-50 md:left-65 w-70 md:w-115 h-70 md:h-115 rounded-full blur-[180px] md:blur-[270px] bg-cream pointer-events-none" />
+        <div className="absolute bottom-90 md:bottom-10 left-50 md:left-65 w-70 md:w-115 h-70 md:h-115 rounded-full blur-[180px] md:blur-[270px] blob bg-cream pointer-events-none" />
 
         {/* Partie Droite : Boîte du formulaire blanc */}
         <ContactForm />

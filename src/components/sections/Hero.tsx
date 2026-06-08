@@ -10,10 +10,10 @@ const Hero = () => {
     >
       <div className="absolute inset-0 pointer-events-none z-0">
         {/* Premier cercle flou (en bas à gauche) */}
-        <div className="absolute bottom-0 -left-15 md:-bottom-10 md:-left-40 w-70 md:w-130 h-70 md:h-130 rounded-full bg-sage blur-[150px] md:blur-[220px]" />
+        <div className="absolute bottom-0 -left-15 md:-bottom-10 md:-left-40 w-70 md:w-130 h-70 md:h-130 rounded-full bg-sage blur-[150px] md:blur-[220px] blob-green" />
 
         {/* Deuxième cercle flou (en haut à droite) */}
-        <div className="absolute -top-20 -right-20 w-60 md:w-100 h-60 md:h-100 rounded-full bg-rose blur-[200px] md:blur-[280px]" />
+        <div className="absolute -top-20 -right-20 w-60 md:w-100 h-60 md:h-100 rounded-full bg-rose blur-[200px] md:blur-[280px] blob" />
       </div>
       <div className="w-full max-w-6xl 2xl:max-w-7xl mx-auto flex flex-col lg:flex-row md:items-center md:justify-between md:mb-14">
         {/*Tag & Titre*/}

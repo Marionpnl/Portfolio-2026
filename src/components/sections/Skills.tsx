@@ -58,7 +58,7 @@ const Skills = () => {
             {/* ZONE DES HARD SKILLS AVEC HALO LUMINEUX */}
             <div className="relative w-full">
               {/* 1. LE HALO FLOU DIFFUS */}
-              <div className="absolute -bottom-25 left-10 w-70 md:w-115 h-70 md:h-115 rounded-full blur-[200px] md:blur-[250px] bg-sage z-0 pointer-events-none" />
+              <div className="absolute -bottom-25 left-10 w-70 md:w-115 h-70 md:h-115 rounded-full blur-[200px] md:blur-[250px] blob-green bg-sage z-0 pointer-events-none" />
 
               {/* 2. LE CONTENEUR DES CHIPS */}
               <div className="relative z-10 flex flex-wrap gap-3 md:max-w-82.5">
