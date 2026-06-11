@@ -80,6 +80,11 @@
         "Configuration of React Router to orchestrate navigation between the pages of the site.",
         "Development of custom components (Collapse, Carousel) making full use of React Hooks.",
         "Implementation of a dedicated 404 error page and automatic redirection for invalid identifiers."
+      ],
+      "improvements": [
+        "Add a favorites system to allow users to save accommodations.",
+        "Persist user choices using LocalStorage.",
+        "Migrate global state management to Redux Toolkit."
       ]
     },
     "monVieuxGrimoire": {
@@ -96,6 +101,11 @@
         "Implementation of JWT tokens and password hashing with bcrypt.",
         "Integration of Sharp and Multer to automatically optimize, resize and convert images to WebP format.",
         "Development of server-side validation logic via Mongoose to prevent duplicate votes."
+      ],
+      "improvements": [
+        "Implement rate limiting system to block brute force attacks.",
+        "Set up comprehensive unit tests for the API.",
+        "Improve the user interface design."
       ]
     },
     "ninaCarducci": {
@@ -112,6 +122,10 @@
         "Compression, resizing and conversion of all images to the modern WebP format, drastically reducing page weight.",
         "Semantic rewriting of HTML tags, integration of Schema.org tags (structured data) and Open Graph Meta tags.",
         "Correction of color contrasts, addition of missing aria-label attributes and implementation of smooth keyboard navigation."
+      ],
+      "improvements": [
+        "Automate the conversion and compression of future images with a Node.js script.",
+        "Improve accessibility by adding comprehensive ARIA attributes to the gallery."
       ]
     },
     "portfolio": {
@@ -128,6 +142,10 @@
         "Project initialization with Vite and configuration of the new Tailwind v4 compiler using native CSS variables.",
         "Strict use of TypeScript interfaces to secure project data and transpose Figma Auto Layout into code.",
         "Integration of react-i18next with asynchronous loading of JSON translation files."
+      ],
+      "improvements": [
+        "Set up unit tests for the components and i18n translation logic.",
+        "Add a dark mode option using Tailwind CSS."
       ]
     },
     "booki": {

@@ -81,6 +81,11 @@
         "Configuration complète de React Router pour orchestrer la navigation entre les pages du site.",
         "Développement de composants customisés (Collapse, Carrousel) en exploitant les Hooks React",
         "Mise en place d'une page d'erreur 404 et redirection automatique pour les URLs invalides"
+      ],
+      "improvements": [
+        "Ajouter un système de favoris pour mettre de côté des logements.",
+        "Persister les choix de l'utilisateur avec le LocalStorage.",
+        "Migrer la gestion d'état globale vers Redux Toolkit."
       ]
     },
     "monVieuxGrimoire": {
@@ -97,6 +102,11 @@
         "Mise en œuvre de tokens JWT et hachage des mots de passe avec bcrypt.",
         "Intégration de Sharp et Multer pour optimiser, redimensionner et convertir les images automatiquement",
         "Développement d'une logique de validation côté serveur via Mongoose pour bloquer les doublons de votes."
+      ],
+      "improvements": [
+        "Implémenter un système de Rate Limiting pour bloquer les attaques par force brute.",
+        "Mettre en place des tests unitaires complets pour l'API.",
+        "Améliorer le design de l'interface utilisateur."
       ]
     },
     "portfolio": {
@@ -113,6 +123,10 @@
         "Initialisation du projet avec Vite et configuration du compilateur Tailwind v4 à l'aide des variables CSS natives",
         "Utilisation de TypeScript pour typer tous les composants et les données, garantissant ainsi une maintenance facile et une évolutivité sans risque de bugs.",
         "Intégration de react-i18next pour gérer les traductions de manière efficace"
+      ],
+      "improvements": [
+        "Mettre en place des tests unitaires pour sécuriser les composants et la logique de traduction i18n.",
+        "Ajouter un mode sombre (Dark Mode) natif avec Tailwind CSS."
       ]
     },
     "ninaCarducci": {
@@ -129,6 +143,10 @@
         "Optimisation et conversion de toutes les images au format moderne WebP, réduisant drastiquement le poids des pages.",
         "Réécriture sémantique des balises HTML, intégration des balises Schema.org (données structurées) et Meta Open Graph.",
         "Correction des contrastes, ajout des attributs alt et aria-label manquants et implémentation d'une navigation au clavier fluide."
+      ],
+      "improvements": [
+        "Automatiser la conversion et la compression des futures images avec un script Node.js.",
+        "Améliorer l'accessibilité en ajoutant des attributs ARIA complets sur la galerie."
       ]
     },
     "booki": {
@@ -145,6 +163,10 @@
         "Analyse détaillée des maquettes Figma pour extraire les espacements, typographies et breakpoints exacts.",
         "Utilisation de Flexbox et CSS Grid pour construire des layouts fluides adaptés à tous les formats d'écran.",
         "Structuration rigoureuse des balises HTML5 sémantiques pour assurer une hiérarchie de contenu claire."
+      ],
+      "improvements": [
+        "Ajouter des animations fluides en CSS (hover/transition) sur les cartes d'hôtels.",
+        "Rendre la barre de recherche fonctionnelle en simulant un filtrage dynamique."
       ]
     }
   },

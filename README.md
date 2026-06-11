@@ -1,73 +1,77 @@
-# React + TypeScript + Vite
+# Marion Penel | Portfolio Professionnel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur le dépôt de mon portfolio professionnel. Ce projet est une application web moderne, performante et entièrement accessible, conçue pour présenter mes compétences, mes créations et mon parcours de développeuse web.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Fonctionnalités & Optimisations
 
-## React Compiler
+- **Sélection de projets dynamiques :** Système de filtrage fluide par catégorie (Front-End, Back-End, Fullstack) et affichage détaillé via des modales sur-mesure.
+- **Internationalisation (i18n) :** Application entièrement bilingue (Français / Anglais) avec chargement asynchrone des dictionnaires de traduction pour optimiser les performances.
+- **Formulaire de contact sécurisé :** Intégration asynchrone avec l'API Web3Forms, validation stricte des champs en temps réel (`.trim()`) et gestion des variables d'environnement.
+- **Performance & SEO de pointe :** Score optimal sur Lighthouse grâce au préchargement asynchrone des polices/icônes, une architecture d'image soignée et une structure HTML sémantique.
+- **Design Responsive & Fluide :** Interface moderne conçue d'abord sur Figma, puis intégrée avec Tailwind CSS (gestion fine du cross-browsers incluant des correctifs CSS natifs pour Firefox).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Stack Technique
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Catégorie                   | Technologies utilisées                                                    |
+| :-------------------------- | :------------------------------------------------------------------------ |
+| **Front-End**               | React (Hooks, Components, Context), TypeScript, Tailwind CSS, HTML5, CSS3 |
+| **Outils & Gestion**        | Vite, i18next (Internationalisation), Git & GitHub                        |
+| **Architecture / Sécurité** | Variables d'environnement (`.env`), TypeScript Generics & Interfaces      |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📦 Architecture du projet
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+├── index.html            # Point d'entrée HTML de l'application (SEO, Fonts, Open Graph)
+├── src/
+│   ├── assets            # Images
+│   ├── components/       # Composants React réutilisables
+│   │   ├── ui/           # Composants atomiques (Cards, Modales, Formulaire)
+│   │   └── layout/       # Footer & Navigation
+│   │   └── sections/     # Sections principales de la page (Hero, About, Projects)
+│   ├── data/             # Fichiers de données statiques (Liste des projets et des skills)
+│   ├── i18n/             # Configuration de i18next et dictionnaires JSON (FR/EN)
+│   ├── types/            # Fichiers de typage et interfaces TypeScript
+│   ├── index.css         # Styles globaux et configurations Tailwind
+│   ├── App.tsx           # Composant racine
+│   └──  main.tsx         # Point d'entrée de l'application
+└── .env.local            # Fichier caché pour les variables d'environnement
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ⚙️ Installation et Lancement Local
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 1. Prérequis
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Assurez-vous d'avoir installé [Node.js](https://nodejs.org/) sur votre machine (version LTS recommandée).
+
+### 2. Cloner le projet
+
+```bash
+git clone [https://github.com/votre-username/nom-du-repo.git](https://github.com/votre-username/nom-du-repo.git)
+cd nom-du-repo
 ```
+
+### 3. Installer les dépendances
+
+```bash
+npm install
+```
+
+### 4. Configurer les variables d'environnement
+
+Créez un fichier .env à la racine du projet et ajoutez votre clé publique Web3Forms:
+
+VITE_WEB3FORMS_ACCESS_KEY=votre_cle_publique_ici
+
+### 5. Lancer le serveur de développement
+
+```bash
+npm run dev
+```
+
+L'application sera accessible localement à l'adresse indiquée dans votre terminal

@@ -179,6 +179,27 @@ export const ProjectModal = ({
           </div>
         </div>
 
+        {/* PERSPECTIVES D'AMÉLIORATION */}
+        <div className="flex justify-center gap-2">
+          <div className="bg-[#E5E9E6]/40 border border-black/5 p-5 rounded-3xl shadow-[0_4px_4px_rgba(0,0,0,0.25)] flex flex-col gap-2 mt-2">
+            <h4 className="font-space font-bold text-sm md:text-base text-rose mb-2">
+              Perspectives d'amélioration
+            </h4>
+            <ul className="font-dm text-xs md:text-sm text-black/80 flex flex-col gap-2.5 pl-1">
+              {(
+                (t(`projects.${project.slug}.improvements`, {
+                  returnObjects: true,
+                }) as string[]) || []
+              ).map((improvement, i) => (
+                <li key={i} className="flex items-start gap-2 leading-relaxed">
+                  <span className="text-rose mt-1.5 shrink-0 block w-1.5 h-1.5 rounded-full bg-rose" />
+                  {improvement}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
         {/* FOOTER ACTIONS */}
         <div className="flex items-center justify-between border-t border-black/5 pt-6 mt-4">
           <div className="flex flex-wrap gap-3">

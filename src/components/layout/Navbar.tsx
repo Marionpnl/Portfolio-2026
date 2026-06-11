@@ -25,7 +25,7 @@ const Navbar = ({ isOpen, setIsOpen }: NavbarProps) => {
   useEffect(() => {
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
-        // Si la section occupe une bonne partie de l'écran (isIntersecting)
+        // Si la section est visible à l'écran (isIntersecting)
         if (entry.isIntersecting) {
           setActiveSection(`#${entry.target.id}`);
         }
