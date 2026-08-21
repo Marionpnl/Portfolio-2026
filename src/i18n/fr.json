@@ -67,6 +67,27 @@
     "see_live_site": "Voir le site",
     "see_github": "Code source",
     "close": "Fermer",
+    "flowmind": {
+      "category": "Fullstack",
+      "title": "FlowMind",
+      "card_description": "Assistant de vie personnelle augmenté par l'IA réunissant planification intelligente, bibliothèque de lecture et suggestions d'activités en un seul outil cohérent.",
+      "about": "FlowMind est une application web personnelle qui réunit trois besoins du quotidien en un seul outil intelligent : planifier sa journée (FlowDay), garder une trace de ses lectures et apprentissages (MindShelf), et se laisser inspirer par des suggestions d'activités concrètes (SparkTime). Plutôt qu'un simple exercice CRUD, FlowMind raconte une histoire cohérente autour d'un vrai usage personnel — c'est l'outil que j'utilise moi-même au quotidien, avec mes propres données.",
+      "challenges": [
+        "Transformer une description libre de la journée en planning structuré et exploitable grâce à l'IA.",
+        "Garantir une cohérence totale des types de données entre le frontend et le backend.",
+        "Unifier trois usages du quotidien (planning, lecture, suggestions d'activités) dans un seul outil cohérent."
+      ],
+      "solutions": [
+        "Intégration de l'API OpenAI (gpt-4o-mini) avec des prompts structurés pour générer un planning à partir d'un texte libre.",
+        "Mise en place d'une architecture monorepo avec des types TypeScript partagés (shared/types.ts) entre le frontend et le backend.",
+        "Authentification JWT sécurisée et update optimiste avec rollback pour une interface réactive."
+      ],
+      "improvements": [
+        "Ajouter des notifications pour renforcer le suivi des habitudes.",
+        "Enrichir les suggestions SparkTime avec des recommandations basées sur l'historique d'usage.",
+        "Mettre en place des tests end-to-end sur les flux critiques (génération de planning IA, authentification)."
+      ]
+    },
     "kasa": {
       "category": "Front end",
       "title": "Kasa",

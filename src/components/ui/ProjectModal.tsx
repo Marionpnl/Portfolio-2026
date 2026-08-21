@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import type { ProjectModalProps } from '../../types/index';
+import { OpenAIIcon } from './OpenAIIcon';
 
 export const ProjectModal = ({
   project,
@@ -120,7 +121,11 @@ export const ProjectModal = ({
                   key={tech}
                   className="flex items-center gap-1.5 bg-sage/10 border shadow-[0_4px_4px_rgba(0,0,0,0.25)] border-black/5 px-3 py-1 rounded-full"
                 >
-                  <i className={`${iconClass} colored text-xs md:text-lg`} />
+                  {tech === 'OpenAI API' ? (
+                    <OpenAIIcon className="w-3 h-3 md:w-4.5 md:h-4.5 text-black shrink-0" />
+                  ) : (
+                    <i className={`${iconClass} colored text-xs md:text-lg`} />
+                  )}
                   <span className="font-dm text-xs md:text-sm text-black">
                     {tech}
                   </span>

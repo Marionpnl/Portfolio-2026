@@ -66,6 +66,27 @@
     "see_live_site": "View live site",
     "see_github": "Source code",
     "close": "Close",
+    "flowmind": {
+      "title": "FlowMind",
+      "category": "fullstack",
+      "card_description": "AI-augmented personal life assistant bringing together smart planning, a reading library and activity suggestions in one coherent tool.",
+      "about": "FlowMind is a personal web application that brings together three everyday needs into one smart tool: planning the day (FlowDay), keeping track of reading and learning (MindShelf), and getting inspired by concrete activity suggestions (SparkTime). Rather than a simple CRUD exercise, FlowMind tells a coherent story built around a real personal use case — it's the tool I use myself every day, with my own data.",
+      "challenges": [
+        "Turning a free-text description of the day into a structured, usable schedule using AI.",
+        "Ensuring full data type consistency between the frontend and backend.",
+        "Unifying three everyday use cases (planning, reading, activity suggestions) into one coherent tool."
+      ],
+      "solutions": [
+        "Integration of the OpenAI API (gpt-4o-mini) with structured prompts to generate a schedule from free text.",
+        "A monorepo architecture with shared TypeScript types (shared/types.ts) between the frontend and backend.",
+        "Secure JWT authentication and optimistic updates with rollback for a responsive interface."
+      ],
+      "improvements": [
+        "Add notifications to reinforce habit tracking.",
+        "Enrich SparkTime suggestions with recommendations based on usage history.",
+        "Set up end-to-end tests on critical flows (AI schedule generation, authentication)."
+      ]
+    },
     "kasa": {
       "title": "Kasa",
       "category": "front end",

@@ -15,6 +15,8 @@ const techIcons: Record<string, string> = {
   Express: 'devicon-express-original',
   TypeScript: 'devicon-typescript-plain',
   'Tailwind v4': 'devicon-tailwindcss-plain',
+  'Tailwind CSS': 'devicon-tailwindcss-plain',
+  Zustand: 'devicon-zustand-plain',
   i18n: 'devicon-javascript-plain',
   'SEO/Performance': 'devicon-google-plain',
   HTML: 'devicon-html5-plain',
